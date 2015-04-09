@@ -1,0 +1,107 @@
+@CHARSET "ISO-8859-1";
+
+body {
+	font-family: 'Arial', sans-serif;
+}
+
+.mceContentBody {background: none; text-align: left; background-color: none;} /* used for tinymce */
+
+/* standard overrides */
+a:link, a:visited {color: #439a00; text-decoration: none; font-weight: normal;}
+a:hover {color: #33302f; text-decoration: none; font-weight: normal;}
+
+h1 { color: #000; font-size: 20px; font-weight: bold; margin: 0 0 10px 0; }
+h2 { color: #000; font-size: 14px; font-weight: bold; margin: 0 0 10px 0; }
+h3 { color: #000; font-size: 11px; font-weight: bold; margin: 0 0 10px 0; }
+p { font-weight: normal; margin: 0 0 10px 0; line-height: 18px; }
+
+
+
+html { overflow-y: scroll; }
+
+/* header */
+#quick-link-container { position: absolute; top: 10px; right: 10px; }
+
+#header-logo {
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.7);
+    left: 0;
+    position: absolute;
+    top: 13px;
+    width: 27.4%;
+}
+/* content */
+#siteframe { text-align: center; background-color: #FFF; }
+#headerframe { background: url(../images/background.jpg);
+background-repeat: repeat-x;
+background-size: 100%;
+}
+#footerframe { }
+
+#header { max-width: 960px; width: 100%; text-align: left; position: relative; margin: 0 auto;}
+#content { max-width: 960px; padding: 5px 0px; margin: 0 auto; text-align: left; min-height:350px; position: relative; }
+#main-content { text-align: left;}
+
+/* footer */
+#footer { position: relative; color: #000; margin: 0 auto; padding: 10px 0 30px 0; font-size: .9em; line-height: 16px; text-align: left; max-width: 960px;}
+#footer p { color: #000; margin: 0 auto; text-align: left; opacity: .6;}
+#footer a:link, #footer a:visited {color: #000; text-decoration: none; font-weight: normal; opacity: .8;}
+#footer a:hover { color: #000; text-decoration: none; opacity: 1;}
+
+#sidebar {float: right; font-size: .9em; text-align: left; padding: 0 0 20px 0px; width: 24%; }
+
+/* content widths */
+.gutter_1 { float: left; width: 1%; }
+.column_19 { float: left; width: 19%; }
+.column_20 { float: left; width: 20%; }
+.column_24 { float: left; width: 24%; }
+.column_25 { float: left; width: 25%; }
+.column_60 { float: left; width: 60%; }
+.column_75 { float: left; width: 75%; }
+.column_78 { float: left; width: 78%; }
+.column_80 { float: left; width: 80%; }
+.column_100 { float: left; width: 100%; }
+.column_banner { width: 100%; }
+
+.gutter-right { padding-right: 1.38888888888889%; }
+.gutter-left { padding-left: 1.38888888888889%; }
+.gutter-right-left { padding: 0px 1.38888888888889%; }
+
+.column_pad_1 { padding: 10px 5px 10px 0px; }
+.column_pad_2 { padding: 10px 5px 10px 5px; }
+.column_pad_3 { padding: 10px 0px 10px 5px; }
+
+.column_right { float: right; }
+
+
+ul#breadcrumb { list-style: none; margin: 0px; padding: 0px; position: relative; top: -5px; }
+ul#breadcrumb li { font-size: 11px; margin-right: 5px; list-style: none; display: block; float: left; padding-right: 15px; height: 24px; line-height: 24px; color: #0066CC; background: transparent url(/img/breadcrumb.png) no-repeat right center; cursor: pointer;}
+ul#breadcrumb li a { text-decoration: none; }
+
+
+
+/* social links */
+#fb-header { float: left; }
+#fb-footer { float: left; margin-right: 5px; }
+#twitter-header { float: left; margin-left: 5px; }
+#twitter-footer { float: left; margin-right: 5px;}
+#youtube-header { float: left; margin-left: 5px; }
+#youtube-footer { float: left; margin-right: 5px; }
+#instagram-header { float: left; margin-left: 5px; }
+#instagram-footer { float: left; margin-right: 5px; }
+#pinterest-header { float: left; margin-left: 5px; }
+#pinterest-footer { float: left; }
+#social-header { position: absolute; right: 0px; top: 35px; text-align: left; padding-right: 5px; }
+#social-footer { padding-left: 0px;}
+
+.horizontal-line {border-bottom: 1px #CCC dashed; margin: 18px 0 18px 0;}
+
+
+/* Main Navigation */
+#mainnavigation { min-height: 30px; margin: 0 auto; position: absolute; bottom: 0; left: 0; text-align: left; z-index:1999; width: 665px;}
+#mainnavigation ul#nav, 
+#mainnavigation ul#nav > li { float: left; list-style: none; margin: 0 auto; padding: 0px; height: 30px; cursor: pointer;  text-align: center; margin: -4px -26px 0 11px; display:inline; position:relative; }
+#mainnavigation ul#nav > li > a, 
+#mainnavigation ul#nav > li > a:visited { font-size: 13px; color: #000; text-decoration: none; display: block; height: 28px; line-height: 28px; padding: 0px 16px 0 16px; }
+#mainnavigation ul#nav > li > a:hover { color: #000; text-decoration: none; display: block; }
+#mainnavigation ul#nav > li.selected > a, 
+#mainnavigation ul#nav > li.active > a { color: #000; text-decoration: none; display: block; }

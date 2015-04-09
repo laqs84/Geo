@@ -1,0 +1,1632 @@
+  
+
+
+
+
+
+
+
+     
+
+<SCRIPT language="JavaScript" type="text/javascript" >
+function submitform()
+{
+  document.form.buscar.value = 'Buscar.';
+  //doSubmit();
+  document.form.submit();
+}
+</SCRIPT>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/index.dwt" codeOutsideHTMLIsLocked="false" -->
+ 
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta name="robots" content="all" />
+    <meta name="viewport" content="width=1024"/>
+    <meta name="keywords" content="crremates, remates, remates judiciales, juzgado, judicial, juzgado especializado, proceso ejecutivo prendario, remates bancarios, gaceta, la gaceta, costa rica, propiedades, vehiculos, maquinaria, lotes, joyeria, propiedades en remate, remates oficiales, publicacion de remates, remates del dia, guia remates, coordenadas geograficas, coordenadas, san jose, alajuela, cartago, heredia, guanacaste, puntarenas, limon, Palmares, Grecia, Tibas, Moravia, abangares, bancos, banco nacional, bncr, bcr, banco popular, mutual, scotiabank " />
+    <meta name="description" content="Remates Judiciales de Costa Rica, ofrecemos consultas dinamicas de los remates oficiales que salen publicados en la gaceta." />
+
+	<title>Remates Judiciales de la Gaceta (Costa Rica) / CrRemates.com</title> 
+
+    <!-- Valida el correo electronico -->
+    <script src="js/validacorreo.js" type="text/javascript" charset="utf-8"></script>
+    
+    <!-- jquery-cascade -->
+	<script type="text/javascript" src="js/jquery/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery/jquery.cascade.js"></script>
+    <script type="text/javascript" src="js/jquery/jquery.cascade.ext.js"></script>
+    <script type="text/javascript" src="js/jquery/jquery.templating.js"></script>
+	<script type="text/javascript">
+
+			function commonTemplate(item) {
+				return "<option value='" + item.Value + "'>" + item.Text + "</option>";
+			};
+			function commonTemplate2(item) {
+				return "<option value='" + item.Value + "'>***" + item.Text + "***</option>";
+			};
+
+			function commonMatch(selectedValue) {
+				return this.When == selectedValue;
+			};
+
+	</script>
+		<style type="text/css">
+			.cascade-loading
+			{
+				background: transparent url("indicator.gif") no-repeat center;
+			}
+		</style>
+
+	<!-- jquery-cascade -->
+
+	<!-- start css -->
+		<link rel="stylesheet" href="css/base.css" type="text/css" charset="utf-8" />
+		<link rel="stylesheet" href="css/home.css" type="text/css" charset="utf-8" />
+	<!-- end css -->
+    <link rel="shortcut icon" type="image/gif" href="http://crremates.com/home/images/icono/logo.gif" />
+    <link rel="icon" type="image/gif" href="http://crremates.com/home/images/icono/logo.gif" />
+
+	<script type="text/javascript" charset="utf-8">
+		<!--
+		document.write('<style type="text/css" media="screen">#quicktimecontroller { display:block; } #latest { height: 481px; }</style>'); 
+		
+		function MM_preloadImages() { //v3.0
+		  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+			var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+			if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+		}
+		//-->
+	</script>
+        
+    <!--//MENU-->
+	<!--<script2 type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script2>-->
+        <link rel="stylesheet" type="text/css" href="css/menu/ddsmoothmenu.css" />
+        <script type="text/javascript" src="js/menu/ddsmoothmenu.js">
+        /***********************************************
+        * Smooth Navigational Menu- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+        * This notice MUST stay intact for legal use
+        * Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+        ***********************************************/
+        </script>
+        
+        <script type="text/javascript">
+        ddsmoothmenu.init({
+            mainmenuid: "main-nav", //menu DIV id
+            orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
+            classname: 'ddsmoothmenu', //class added to menu's outer DIV
+            //customtheme: ["#1c5a80", "#18374a"],
+            contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+        })
+        </script>
+        
+        <script type="text/javascript" src="js/menu/bookmarkscroll.js"></script>
+		<script type="text/javascript"><!--//--><![CDATA[//><!--
+        startList = function() {
+        if (document.all&&document.getElementById) {
+        cssdropdownRoot = document.getElementById("cssdropdown");
+        for (i=0; i<cssdropdownRoot.childNodes.length; i++) {
+        node = cssdropdownRoot.childNodes[i];
+        if (node.nodeName=="LI") {
+        node.onmouseover=function() {
+        this.className+=" over";
+        }
+        node.onmouseout=function() {
+        this.className=this.className.replace(" over", "");
+        }
+        }
+        }
+        }
+        }
+        
+        if (window.attachEvent)
+        window.attachEvent("onload", startList)
+        else
+        window.onload=startList;
+        
+        //--><!]]></script>
+        <!--//END MENU-->
+
+    <!-- InstanceBeginEditable name="Head-plus" -->
+    	<!-- uslide index -->
+			<link type="text/css" href="css/index/jquery-ui-1.8.16.custom.css" rel="stylesheet" />
+        	<script type="text/javascript" src="js/jquery/index/jquery-1.6.2.min.js"></script>
+			<script type="text/javascript" src="js/jquery/index/jquery-ui-1.8.16.custom.min.js"></script>
+			<script type="text/javascript">
+				var $jQ5 = jQuery.noConflict();
+				$jQ5(function() {
+					// Tabs
+					$jQ5('#tabs').tabs();
+				});
+			</script>
+    	<!-- uslide index -->
+	<!-- InstanceEndEditable -->        
+
+
+		<!-- begin Calendario-->
+		<script type="text/javascript">
+		function showUser(mes,ano,correo)
+		{
+		//alert("mes "+mes);
+		if (mes="0")
+		  {
+		  mes = document.getElementById("mes").value;
+		  }
+		if (ano="0")
+		  {
+		  ano = document.getElementById("ano").value;
+		  }
+		if (window.XMLHttpRequest)
+		  {// code for IE7+, Firefox, Chrome, Opera, Safari
+		  xmlhttp=new XMLHttpRequest();
+		  }
+		else
+		  {// code for IE6, IE5
+		  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+		  }
+		  
+		xmlhttp.onreadystatechange=function()
+		  {
+		  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+			{
+			document.getElementById("txtHint").innerHTML=xmlhttp.responseText;
+			}
+		  }
+		xmlhttp.open("GET","calendario.php?mes="+mes+"&ano="+ano+"&correo="+correo,true);
+		xmlhttp.send();
+		}
+		</script>      
+		<!-- end Calendario-->
+        
+		<!-- ulslide TOP 10 de remates -->
+			<!-- Including jQuery -->
+			<script type="text/javascript" src="jjs/anuncios/jquery.js"></script>
+			<!-- Including Mousewheel jQuery plugin -->
+			<script type="text/javascript" src="js/anuncios/jquery.mousewheel.js"></script>
+			<!-- Including ulslide jQuery plugin -->
+			<script type="text/javascript" src="js/anuncios/jquery.ulslide.js"></script>
+		<!-- ulslide TOP 10 de remates -->
+    
+		<!-- DIV Emergente de estados; en listas de remates -->
+        <script type="text/javascript">
+           function muestraDetEstado(dato1, event) {
+           //alert ("dato1="+dato1);
+            var capa = document.getElementById('detEstado');
+            capa.innerHTML = dato1;
+            x = event.clientX;
+            y = event.clientY;
+            x = x-180;
+            y = y-80;
+            //alert ("x="+x);
+            //alert ("y="+y);
+            document.getElementById('detEstado').style.top = y+"px";
+            document.getElementById('detEstado').style.left = x+"px";
+            document.getElementById('detEstado').style.visibility='visible';
+            document.getElementById('detEstado').style.display='block';
+           }
+           function ocultaDetEstado() {
+            var capa = document.getElementById('detEstado');
+            capa.innerHTML = "";
+            document.getElementById('detEstado').style.display='none';
+            document.getElementById('detEstado').style.visibility='hidden';
+           }
+        </script>        
+		<!-- DIV Emergente de estados; en listas de remates -->
+</head>
+
+<body bgcolor="#ffffff" leftmargin="0" topmargin="0" rightmargin="0" bottommargin="0" onLoad="mostrarDiv();">
+<script src="js/shortcuts.js" type="text/javascript" charset="utf-8"></script>
+<div id="container">
+  <div id="main">
+
+    <div id="banner" align="center">
+   	    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" 
+        	codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" 
+            width="950" height="96" title="Banner CrRemates">
+   	      <param name="movie" value="flash/banner.swf" />
+   	      <param name="quality" value="high" />
+   	      <embed src="flash/banner.swf" quality="high" 
+          	pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" 
+            type="application/x-shockwave-flash" width="950" height="96"></embed>
+        </object>
+    </div><!-- banner -->
+
+<div id="content" >
+		<div id="main-nav" class="ddsmoothmenu">
+        <ul>
+          <li><a href="index.php" title="Inicio CrRemates">Inicio</a></li>
+
+          <li><a href="#" title="Informacion de los Remates">Remates</a>
+            <ul>
+              <li>
+               	<a href="index.php" id="Publicaciones de HOY en la Gaceta">
+                    		Publicaciones de HOY en la Gaceta               	</a>              </li>
+                    <li>
+                   	  <a href="119.php" id="PubSem" title="Encontrarás los remates publicados esta semana en la Gaceta de Costa Rica">
+                    		Publicaciones de esta Semana                   	  </a>              </li>
+                    <li>
+                        <a href="123.php" id="RematesHOY" title="Encontrarás los remates que se realizarán HOY">
+                            HOY se Remata en los Juzgados                        </a>                    </li>
+                    <li>
+                        <a href="124.php" id="RematesProxSem" title="Encontrarás los remates que se realizarán la Prox. Semana">
+                            Remates de la Prox. Semana                        </a>                    </li>
+            </ul>
+          </li>
+
+          <li><a href="#" title="CLUB CrRemates">CLUB CrRemates</a>
+            <ul>
+              		<li>
+                	  <a href="140.php" id="BqRemXNumRem" title="Encontrarás los remates; por numero de remate; que aún no han sido efectuado">
+              Por número de Remate</a></li>
+                    <li>
+                      	<a href="142.php" id="BqRemXFinca" title="Búsqueda de Remates por número de la propiedad">
+              Por número de Finca</a></li>
+                    <li>
+                      	<a href="143.php" id="BqRemXPlaca" title="Búsqueda de Remates por número de placa de vehiculo">
+              Por número de Placa</a></li>
+                    <li>
+                      	<a href="141.php" id="BqRemXProv" title="Búsqueda de Remates por provincia">
+              Por Provincia (solo propiedades)</a></li>
+                    <li>
+                        <a href="105.php" id="BqRemXFecMon" title="Búsqueda General de Remates">
+              Busqueda General -propiedades-vehículos-joyeria-maquinaria</a></li>
+                    <li>
+                        <a href="144.php" id="BqRemX23Rem" title="Búsqueda General de segundo y tercer Remate">
+              Por fecha de 2° y 3° remate</a></li>
+                    <li>
+                      	<a href="147.php?convenio=S" id="BqRemXFin" title="Búsqueda de Remates por financiera">
+              <strong>Por Financiera ... Convenio Banco Nacional!!!<strong></a></li>
+              <li><a href="304.php" title="Beneficios del CLUB CrRemates">Beneficios</a></li>
+            </ul> 
+          </li> 
+          <li><a href="#" title="Guia: Ya tengo el remate judicial al que quiero asistir, ¿que hago ahora?">Guias</a>
+          	<ul>
+          		<li><a href="220.php" title="Guia de Remates">Guia de Remates</a></li> 
+          		<li><a href="224.php" title="Preguntas Frecuentes">Preguntas Frecuentes</a></li>
+          		<li><a href="guiaEstados.php" title="Guia de Estados de CrRemates">Guia de Estados</a></li> 
+          		<li><a href="221.php" title="Lista de Peritos y Arquitectos">Peritos y Arquitectos</a></li>
+          		<li><a href="148.php" title="Lista de Tribunales de Justicia Nacioanles">Juzgados del país</a></li>
+          		<li><a href="145.php" title="Si deseas recomendar el sitio a un amigo">Recomienda el Sitio</a></li>
+          	</ul>
+          </li>
+      <li><a href="222.php" title="Venta de Bienes de Financieras y Empresas">
+          		Venta de Bienes</a>
+              <ul>
+                                                        
+                    <li> 
+                      <a href="2222.php?cod_empresa=1" id="SB" title="Detalle de venta de bienes CrRemates">
+                               CrRemates                      </a>                   
+                    </li>
+                             </ul>
+          </li>
+
+          <li><a href="301.php" title="Puedes registrarte en CrRemates, AQUÍ">Registrese</a></li>
+
+      <li>
+                          </li>
+
+                      		<li>
+                    <a href="505.php" title="Inicio de Sesion en CrRemates">Iniciar Sesion</a>
+          		</li>
+                      <li><a href="504.php" title="Comentarios, Sugerencias o Consultas de remates o del Sitio">Contactenos</a></li>
+        </ul>
+    	<br style="clear: left" />
+</div>
+
+<div id="fecha" align="right" class="Usuario">     
+			28-Mar-2015 12:10:00 PM&nbsp;      </div>     
+	  <div id="contenidoPrin">     
+ <!-- InstanceBeginEditable name="Login" -->			  <!-- InstanceEndEditable --> 
+ <!-- InstanceBeginEditable name="MenuRemDia" --><!-- InstanceEndEditable -->
+ <!-- InstanceBeginEditable name="MenuRemAnt" --><!-- InstanceEndEditable -->
+  <table width="750" height="600" border="0" align="center" cellpadding="0" cellspacing="0" bordercolor="#ffffff" bgcolor="#C6CA8C" vspace="0">
+	<tr>
+       <td colspan="3" width="31" height="20" background="images/diseno/imagenes_r2_c2.jpg"></td>
+       <td colspan="5" width="93%" background="images/diseno/imagenes_r2_c42.jpg"></td>
+       <td colspan="2" width="26" height="20" background="images/diseno/imagenes_r2_c5.jpg" ></td>
+    </tr>
+    <tr>
+            <td width="21" height="2"><img src="images/diseno/imagenes_r3_c1.jpg" /></td>
+            <td width="5" height="2" background="images/diseno/imagenes_r3_c2.jpg" ></td>
+            <td width="5" height="2" background="images/diseno/imagenes_r3_c3.jpg" ></td>
+            <td colspan="5" width="100%" height="2" background="images/diseno/imagenes_r3_c4.jpg" ></td>
+            <td width="5" height="2" background="images/diseno/imagenes_r3_c5.jpg" ></td>
+            <td width="21" height="2" ><img src="images/diseno/imagenes_r3_c6.jpg" /></td>
+          </tr>
+          <tr>
+            <td background="images/diseno/imagenes_r5_c1.jpg" ></td>
+            <td colspan="8" bgcolor="#FFFFFF"><!-- InstanceBeginEditable name="Contenido" -->
+    <table align="center" width="90%" border="0" cellpadding="0" cellspacing="0">
+             <tr>
+             <td colspan="8" align="center">
+             <span  class="CBTitulos">
+             Los links a continuaci&oacute;n muestran la lista de los remates  judiciales publicados hoy en la Gaceta oficial de Costa Rica.         </span>         </td>
+         </tr>
+    </table>
+
+    <form name="form1" method="GET" >
+        <input name="mensaje" type="hidden" id="mensaje" size="2" maxlength="2" value=   />
+      	<input name="tipoBien" type="hidden" id="tipoBien" size="2" maxlength="2" value= 1 >
+      	<input name="orden" type="hidden" id="orden" size="2" maxlength="2" value=   >
+    </form>
+
+	<div id="detEstado" style="display:none;visibility: hidden;">
+	</div>
+
+    <div id="tabs">
+        <ul>
+            <li>
+                <a href="#tabs-1">
+                      <div class="menuPropiedades" >
+                        <span class="TitMenu">
+                        &nbsp;&nbsp;&nbsp;&nbsp;(0)
+                        </span>
+                      </div>
+                </a>
+            </li>
+            <li>
+                <a href="#tabs-2">
+                       <div class="menuVehiculos" >
+                        <span class="TitMenu">
+                        &nbsp;&nbsp;(0)
+                        </span>
+                      </div>
+                </a>
+            </li>
+            <li>
+                <a href="#tabs-3">
+                      <div class="menuJoyeria" >
+                        <span class="TitMenu">
+                        (0)
+                        </span>
+                      </div>
+                </a>
+            </li>
+            <li>
+                <a href="#tabs-4">
+                      <div class="menuMaquinaria" >
+                        <span class="TitMenu">
+                         &nbsp;&nbsp;(0)
+                        </span>
+                      </div>
+                </a>
+            </li>
+        </ul>
+
+
+
+
+
+        <div id="tabs-1">
+            <table width="500px" bordercolor="#669933" border="1" align="center">
+                <tr bgcolor="#669933">
+                  <td colspan="9" align="center"><span class="TitulosCen">Remates de propiedades publicados  HOY</span></td>
+                </tr>
+                <tr bgcolor="#669933">
+                  <td align="center"><span class="reporteTit">Detalle</span></td>
+                  <td align="center"><span class="reporteTit">Fecha Remate<br> (d&iacute;a/mes/a&ntilde;o)</span></td>
+                  <td align="center"><span class="reporteTit">Provincia</span></td>
+                  <td align="center"><span class="reporteTit">Cantón</span></td>
+                  <td align="center"><span class="reporteTit">Distrito</span></td>
+                  <td align="center"><span class="reporteTit">M²</span></td>
+                  <td align="center"><span class="reporteTit">Base</span></td>
+                  <td align="center"><span class="reporteTit">Quien Remata</span></td>
+                  <td align="center"><span class="reporteTit">Estado</span></td>
+                </tr>
+                                              <tr>
+                                                                  <td align="center">
+                                     <a href="115.php?cod_remate=39939" onClick="pageTracker._trackEvent('Persona Juridica' ,'REMATE-P','39939' );">
+                                     <img src="images/icono/detalle.png" width="30" height="30" alt="detalle del remate"39939 /> </a>                      		  </td>
+                                  <td><div align="center"><span class="reporte">16/04/2015</span></div></td>
+                                  <td><span class="reporte">San Jose</span></td>
+                                  <td><span class="reporte">Central</span></td>
+                                  <td><span class="reporte">Pavas</span></td>
+                                  <td><div align="right"><span class="reporte">299.93 m²</span></div></td>
+                                  <td><div align="right"><span class="reporte">¢67,419,178.00</span></div></td>
+                                  <td>
+                                  	<div align="center">
+                                        <span class="reporte">
+											Persona Juridica                                        </span>
+                                    </div>
+                                  </td>
+                                  <td align="center">
+                                     
+
+
+
+
+
+
+
+
+		 <a href='#'
+			onmouseover='muestraDetEstado("Remate vigente para Primera Puja. \n  \n Debe confirmar en el Jusgado \
+			(con el numero de expediente) si se efectuarÃ¡ el remate \
+			en la fecha publicada, ya que no contamos con convenio \
+			para este acreedor.", event);'
+			onmouseout='ocultaDetEstado();' > <img src='images/icono/detalleEstadoV.png'
+			        width='30' height='30' alt='detalle del remate'/> 
+		 </a>                                  </td>
+                            </tr>
+                                                <tr bgcolor="#aaff88">
+                                                              <td align="center">
+                                     <a href="115.php?cod_remate=39938" onClick="pageTracker._trackEvent('Banco DAVIVIENDA' ,'REMATE-P','39938' );">
+                                     <img src="images/icono/detalle.png" width="30" height="30" alt="detalle del remate"39938 /> </a>                      		  </td>
+                                  <td><div align="center"><span class="reporte">01/06/2015</span></div></td>
+                                  <td><span class="reporte">San Jose</span></td>
+                                  <td><span class="reporte">Escazú</span></td>
+                                  <td><span class="reporte">Centro</span></td>
+                                  <td><div align="right"><span class="reporte">302.61 m²</span></div></td>
+                                  <td><div align="right"><span class="reporte">$80,000.00</span></div></td>
+                                  <td>
+                                  	<div align="center">
+                                        <span class="reporte">
+											Banco DAVIVIENDA                                        </span>
+                                    </div>
+                                  </td>
+                                  <td align="center">
+                                     
+		 <a href='#'
+			onmouseover='muestraDetEstado("Remate vigente para Primera Puja. \n  \n Debe confirmar en el Jusgado \
+			(con el numero de expediente) si se efectuarÃ¡ el remate \
+			en la fecha publicada, ya que no contamos con convenio \
+			para este acreedor.", event);'
+			onmouseout='ocultaDetEstado();' > <img src='images/icono/detalleEstadoV.png'
+			        width='30' height='30' alt='detalle del remate'/> 
+		 </a>                                  </td>
+                            </tr>
+                                                <tr>
+                                                                  <td align="center">
+                                     <a href="115.php?cod_remate=39921" onClick="pageTracker._trackEvent('Persona Fisica' ,'REMATE-P','39921' );">
+                                     <img src="images/icono/detalle.png" width="30" height="30" alt="detalle del remate"39921 /> </a>                      		  </td>
+                                  <td><div align="center"><span class="reporte">02/06/2015</span></div></td>
+                                  <td><span class="reporte">San Jose</span></td>
+                                  <td><span class="reporte">Puriscal</span></td>
+                                  <td><span class="reporte">Santiago</span></td>
+                                  <td><div align="right"><span class="reporte">206.00 m²</span></div></td>
+                                  <td><div align="right"><span class="reporte">¢3,000,000.00</span></div></td>
+                                  <td>
+                                  	<div align="center">
+                                        <span class="reporte">
+											Persona Fisica                                        </span>
+                                    </div>
+                                  </td>
+                                  <td align="center">
+                                     
+		 <a href='#'
+			onmouseover='muestraDetEstado("Remate vigente para Primera Puja. \n  \n Debe confirmar en el Jusgado \
+			(con el numero de expediente) si se efectuarÃ¡ el remate \
+			en la fecha publicada, ya que no contamos con convenio \
+			para este acreedor.", event);'
+			onmouseout='ocultaDetEstado();' > <img src='images/icono/detalleEstadoV.png'
+			        width='30' height='30' alt='detalle del remate'/> 
+		 </a>                                  </td>
+                            </tr>
+                                                <tr bgcolor="#aaff88">
+                                                              <td align="center">
+                                     <a href="115.php?cod_remate=39928" onClick="pageTracker._trackEvent('Persona Juridica' ,'REMATE-P','39928' );">
+                                     <img src="images/icono/detalle.png" width="30" height="30" alt="detalle del remate"39928 /> </a>                      		  </td>
+                                  <td><div align="center"><span class="reporte">28/04/2015</span></div></td>
+                                  <td><span class="reporte">San Jose</span></td>
+                                  <td><span class="reporte">Goicoechea</span></td>
+                                  <td><span class="reporte">Ipis</span></td>
+                                  <td><div align="right"><span class="reporte">103.19 m²</span></div></td>
+                                  <td><div align="right"><span class="reporte">¢3,000,000.00</span></div></td>
+                                  <td>
+                                  	<div align="center">
+                                        <span class="reporte">
+											Persona Juridica                                        </span>
+                                    </div>
+                                  </td>
+                                  <td align="center">
+                                     
+		 <a href='#'
+			onmouseover='muestraDetEstado("Remate vigente para Primera Puja. \n  \n Debe confirmar en el Jusgado \
+			(con el numero de expediente) si se efectuarÃ¡ el remate \
+			en la fecha publicada, ya que no contamos con convenio \
+			para este acreedor.", event);'
+			onmouseout='ocultaDetEstado();' > <img src='images/icono/detalleEstadoV.png'
+			        width='30' height='30' alt='detalle del remate'/> 
+		 </a>                                  </td>
+                            </tr>
+                                                <tr>
+                                                                  <td align="center">
+                                     <a href="115.php?cod_remate=39941" onClick="pageTracker._trackEvent('Persona Fisica' ,'REMATE-P','39941' );">
+                                     <img src="images/icono/detalle.png" width="30" height="30" alt="detalle del remate"39941 /> </a>                      		  </td>
+                                  <td><div align="center"><span class="reporte">26/05/2015</span></div></td>
+                                  <td><span class="reporte">San Jose</span></td>
+                                  <td><span class="reporte">Alajuelita</span></td>
+                                  <td><span class="reporte">San Felipe</span></td>
+                                  <td><div align="right"><span class="reporte">200.00 m²</span></div></td>
+                                  <td><div align="right"><span class="reporte">¢38,000,000.00</span></div></td>
+                                  <td>
+                                  	<div align="center">
+                                        <span class="reporte">
+											Persona Fisica                                        </span>
+                                    </div>
+                                  </td>
+                                  <td align="center">
+                                     
+		 <a href='#'
+			onmouseover='muestraDetEstado("Remate vigente para Primera Puja. \n  \n Debe confirmar en el Jusgado \
+			(con el numero de expediente) si se efectuarÃ¡ el remate \
+			en la fecha publicada, ya que no contamos con convenio \
+			para este acreedor.", event);'
+			onmouseout='ocultaDetEstado();' > <img src='images/icono/detalleEstadoV.png'
+			        width='30' height='30' alt='detalle del remate'/> 
+		 </a>                                  </td>
+                            </tr>
+                                                <tr bgcolor="#ffff99">
+                                                          <td align="center">
+                                     <a href="115.php?cod_remate=39922" onClick="pageTracker._trackEvent('Banco Nacional de Costa Rica' ,'REMATE-P','39922' );">
+                                     <img src="images/icono/detalle.png" width="30" height="30" alt="detalle del remate"39922 /> </a>                      		  </td>
+                                  <td><div align="center"><span class="reporte">05/05/2015</span></div></td>
+                                  <td><span class="reporte">Alajuela</span></td>
+                                  <td><span class="reporte">San Ramón</span></td>
+                                  <td><span class="reporte">Piedades Sur</span></td>
+                                  <td><div align="right"><span class="reporte">6,566.33 m²</span></div></td>
+                                  <td><div align="right"><span class="reporte">¢11,467,430.78</span></div></td>
+                                  <td>
+                                  	<div align="center">
+                                        <span class="reporte">
+											<img src="verimageslogo.php?id=1" width='60' height='30' border='0'>                                        </span>
+                                    </div>
+                                  </td>
+                                  <td align="center">
+                                     
+		 <a href='#'
+			onmouseover='muestraDetEstado("Remate vigente para Primera Puja. \n  \n Debe confirmar en el Jusgado \
+			(con el numero de expediente) si se efectuarÃ¡ el remate \
+			en la fecha publicada, ya que el acreedor aun no nos ha \
+			proporciona la informacio complementaria para este remate. ", event);'
+			onmouseout='ocultaDetEstado();' > <img src='images/icono/detalleEstadoV.png'
+			        width='30' height='30' alt='detalle del remate'/> 
+		 </a>                                  </td>
+                            </tr>
+                                                <tr bgcolor="#aaff88">
+                                                              <td align="center">
+                                     <a href="115.php?cod_remate=39931" onClick="pageTracker._trackEvent('Persona Fisica' ,'REMATE-P','39931' );">
+                                     <img src="images/icono/detalle.png" width="30" height="30" alt="detalle del remate"39931 /> </a>                      		  </td>
+                                  <td><div align="center"><span class="reporte">16/06/2015</span></div></td>
+                                  <td><span class="reporte">Alajuela</span></td>
+                                  <td><span class="reporte">San Ramón</span></td>
+                                  <td><span class="reporte">San Isidro</span></td>
+                                  <td><div align="right"><span class="reporte">415.10 m²</span></div></td>
+                                  <td><div align="right"><span class="reporte">¢63,000,000.00</span></div></td>
+                                  <td>
+                                  	<div align="center">
+                                        <span class="reporte">
+											Persona Fisica                                        </span>
+                                    </div>
+                                  </td>
+                                  <td align="center">
+                                     
+		 <a href='#'
+			onmouseover='muestraDetEstado("Remate vigente para Primera Puja. \n  \n Debe confirmar en el Jusgado \
+			(con el numero de expediente) si se efectuarÃ¡ el remate \
+			en la fecha publicada, ya que no contamos con convenio \
+			para este acreedor.", event);'
+			onmouseout='ocultaDetEstado();' > <img src='images/icono/detalleEstadoV.png'
+			        width='30' height='30' alt='detalle del remate'/> 
+		 </a>                                  </td>
+                            </tr>
+                                                <tr>
+                                                                  <td align="center">
+                                     <a href="115.php?cod_remate=39949" onClick="pageTracker._trackEvent('Banco Popular y de Desarrollo Comunal' ,'REMATE-P','39949' );">
+                                     <img src="images/icono/detalle.png" width="30" height="30" alt="detalle del remate"39949 /> </a>                      		  </td>
+                                  <td><div align="center"><span class="reporte">16/04/2015</span></div></td>
+                                  <td><span class="reporte">Alajuela</span></td>
+                                  <td><span class="reporte">Grecia</span></td>
+                                  <td><span class="reporte">San José</span></td>
+                                  <td><div align="right"><span class="reporte">558.37 m²</span></div></td>
+                                  <td><div align="right"><span class="reporte">$10,971.00</span></div></td>
+                                  <td>
+                                  	<div align="center">
+                                        <span class="reporte">
+											Banco Popular y de Desarrollo Comunal                                        </span>
+                                    </div>
+                                  </td>
+                                  <td align="center">
+                                     
+		 <a href='#'
+			onmouseover='muestraDetEstado("Remate vigente para Primera Puja. \n  \n Debe confirmar en el Jusgado \
+			(con el numero de expediente) si se efectuarÃ¡ el remate \
+			en la fecha publicada, ya que no contamos con convenio \
+			para este acreedor.", event);'
+			onmouseout='ocultaDetEstado();' > <img src='images/icono/detalleEstadoV.png'
+			        width='30' height='30' alt='detalle del remate'/> 
+		 </a>                                  </td>
+                            </tr>
+                                                <tr bgcolor="#aaff88">
+                                                              <td align="center">
+                                     <a href="115.php?cod_remate=39954" onClick="pageTracker._trackEvent('Banco Popular y de Desarrollo Comunal' ,'REMATE-P','39954' );">
+                                     <img src="images/icono/detalle.png" width="30" height="30" alt="detalle del remate"39954 /> </a>                      		  </td>
+                                  <td><div align="center"><span class="reporte">16/04/2015</span></div></td>
+                                  <td><span class="reporte">Alajuela</span></td>
+                                  <td><span class="reporte">Grecia</span></td>
+                                  <td><span class="reporte">San José</span></td>
+                                  <td><div align="right"><span class="reporte">495.00 m²</span></div></td>
+                                  <td><div align="right"><span class="reporte">$10,971.00</span></div></td>
+                                  <td>
+                                  	<div align="center">
+                                        <span class="reporte">
+											Banco Popular y de Desarrollo Comunal                                        </span>
+                                    </div>
+                                  </td>
+                                  <td align="center">
+                                     
+		 <a href='#'
+			onmouseover='muestraDetEstado("Remate vigente para Primera Puja. \n  \n Debe confirmar en el Jusgado \
+			(con el numero de expediente) si se efectuarÃ¡ el remate \
+			en la fecha publicada, ya que no contamos con convenio \
+			para este acreedor.", event);'
+			onmouseout='ocultaDetEstado();' > <img src='images/icono/detalleEstadoV.png'
+			        width='30' height='30' alt='detalle del remate'/> 
+		 </a>                                  </td>
+                            </tr>
+                                                <tr>
+                                                                  <td align="center">
+                                     <a href="115.php?cod_remate=39952" onClick="pageTracker._trackEvent('Banco Popular y de Desarrollo Comunal' ,'REMATE-P','39952' );">
+                                     <img src="images/icono/detalle.png" width="30" height="30" alt="detalle del remate"39952 /> </a>                      		  </td>
+                                  <td><div align="center"><span class="reporte">16/04/2015</span></div></td>
+                                  <td><span class="reporte">Alajuela</span></td>
+                                  <td><span class="reporte">Grecia</span></td>
+                                  <td><span class="reporte">San José</span></td>
+                                  <td><div align="right"><span class="reporte">495.00 m²</span></div></td>
+                                  <td><div align="right"><span class="reporte">$10,971.00</span></div></td>
+                                  <td>
+                                  	<div align="center">
+                                        <span class="reporte">
+											Banco Popular y de Desarrollo Comunal                                        </span>
+                                    </div>
+                                  </td>
+                                  <td align="center">
+                                     
+		 <a href='#'
+			onmouseover='muestraDetEstado("Remate vigente para Primera Puja. \n  \n Debe confirmar en el Jusgado \
+			(con el numero de expediente) si se efectuarÃ¡ el remate \
+			en la fecha publicada, ya que no contamos con convenio \
+			para este acreedor.", event);'
+			onmouseout='ocultaDetEstado();' > <img src='images/icono/detalleEstadoV.png'
+			        width='30' height='30' alt='detalle del remate'/> 
+		 </a>                                  </td>
+                            </tr>
+                                                <tr bgcolor="#aaff88">
+                                                              <td align="center">
+                                     <a href="115.php?cod_remate=39950" onClick="pageTracker._trackEvent('Banco Popular y de Desarrollo Comunal' ,'REMATE-P','39950' );">
+                                     <img src="images/icono/detalle.png" width="30" height="30" alt="detalle del remate"39950 /> </a>                      		  </td>
+                                  <td><div align="center"><span class="reporte">16/04/2015</span></div></td>
+                                  <td><span class="reporte">Alajuela</span></td>
+                                  <td><span class="reporte">Grecia</span></td>
+                                  <td><span class="reporte">San José</span></td>
+                                  <td><div align="right"><span class="reporte">558.37 m²</span></div></td>
+                                  <td><div align="right"><span class="reporte">$10,971.00</span></div></td>
+                                  <td>
+                                  	<div align="center">
+                                        <span class="reporte">
+											Banco Popular y de Desarrollo Comunal                                        </span>
+                                    </div>
+                                  </td>
+                                  <td align="center">
+                                     
+		 <a href='#'
+			onmouseover='muestraDetEstado("Remate vigente para Primera Puja. \n  \n Debe confirmar en el Jusgado \
+			(con el numero de expediente) si se efectuarÃ¡ el remate \
+			en la fecha publicada, ya que no contamos con convenio \
+			para este acreedor.", event);'
+			onmouseout='ocultaDetEstado();' > <img src='images/icono/detalleEstadoV.png'
+			        width='30' height='30' alt='detalle del remate'/> 
+		 </a>                                  </td>
+                            </tr>
+                                                <tr>
+                                                                  <td align="center">
+                                     <a href="115.php?cod_remate=39953" onClick="pageTracker._trackEvent('Banco Popular y de Desarrollo Comunal' ,'REMATE-P','39953' );">
+                                     <img src="images/icono/detalle.png" width="30" height="30" alt="detalle del remate"39953 /> </a>                      		  </td>
+                                  <td><div align="center"><span class="reporte">16/04/2015</span></div></td>
+                                  <td><span class="reporte">Alajuela</span></td>
+                                  <td><span class="reporte">Grecia</span></td>
+                                  <td><span class="reporte">San José</span></td>
+                                  <td><div align="right"><span class="reporte">495.00 m²</span></div></td>
+                                  <td><div align="right"><span class="reporte">$10,971.00</span></div></td>
+                                  <td>
+                                  	<div align="center">
+                                        <span class="reporte">
+											Banco Popular y de Desarrollo Comunal                                        </span>
+                                    </div>
+                                  </td>
+                                  <td align="center">
+                                     
+		 <a href='#'
+			onmouseover='muestraDetEstado("Remate vigente para Primera Puja. \n  \n Debe confirmar en el Jusgado \
+			(con el numero de expediente) si se efectuarÃ¡ el remate \
+			en la fecha publicada, ya que no contamos con convenio \
+			para este acreedor.", event);'
+			onmouseout='ocultaDetEstado();' > <img src='images/icono/detalleEstadoV.png'
+			        width='30' height='30' alt='detalle del remate'/> 
+		 </a>                                  </td>
+                            </tr>
+                                                <tr bgcolor="#aaff88">
+                                                              <td align="center">
+                                     <a href="115.php?cod_remate=39951" onClick="pageTracker._trackEvent('Banco Popular y de Desarrollo Comunal' ,'REMATE-P','39951' );">
+                                     <img src="images/icono/detalle.png" width="30" height="30" alt="detalle del remate"39951 /> </a>                      		  </td>
+                                  <td><div align="center"><span class="reporte">16/04/2015</span></div></td>
+                                  <td><span class="reporte">Alajuela</span></td>
+                                  <td><span class="reporte">Grecia</span></td>
+                                  <td><span class="reporte">San José</span></td>
+                                  <td><div align="right"><span class="reporte">495.00 m²</span></div></td>
+                                  <td><div align="right"><span class="reporte">$10,971.00</span></div></td>
+                                  <td>
+                                  	<div align="center">
+                                        <span class="reporte">
+											Banco Popular y de Desarrollo Comunal                                        </span>
+                                    </div>
+                                  </td>
+                                  <td align="center">
+                                     
+		 <a href='#'
+			onmouseover='muestraDetEstado("Remate vigente para Primera Puja. \n  \n Debe confirmar en el Jusgado \
+			(con el numero de expediente) si se efectuarÃ¡ el remate \
+			en la fecha publicada, ya que no contamos con convenio \
+			para este acreedor.", event);'
+			onmouseout='ocultaDetEstado();' > <img src='images/icono/detalleEstadoV.png'
+			        width='30' height='30' alt='detalle del remate'/> 
+		 </a>                                  </td>
+                            </tr>
+                                                <tr>
+                                                                  <td align="center">
+                                     <a href="115.php?cod_remate=39934" onClick="pageTracker._trackEvent('Persona Fisica' ,'REMATE-P','39934' );">
+                                     <img src="images/icono/detalle.png" width="30" height="30" alt="detalle del remate"39934 /> </a>                      		  </td>
+                                  <td><div align="center"><span class="reporte">13/07/2015</span></div></td>
+                                  <td><span class="reporte">Alajuela</span></td>
+                                  <td><span class="reporte">Grecia</span></td>
+                                  <td><span class="reporte">San Roque</span></td>
+                                  <td><div align="right"><span class="reporte">225.18 m²</span></div></td>
+                                  <td><div align="right"><span class="reporte">$8,000.00</span></div></td>
+                                  <td>
+                                  	<div align="center">
+                                        <span class="reporte">
+											Persona Fisica                                        </span>
+                                    </div>
+                                  </td>
+                                  <td align="center">
+                                     
+		 <a href='#'
+			onmouseover='muestraDetEstado("Remate vigente para Primera Puja. \n  \n Debe confirmar en el Jusgado \
+			(con el numero de expediente) si se efectuarÃ¡ el remate \
+			en la fecha publicada, ya que no contamos con convenio \
+			para este acreedor.", event);'
+			onmouseout='ocultaDetEstado();' > <img src='images/icono/detalleEstadoV.png'
+			        width='30' height='30' alt='detalle del remate'/> 
+		 </a>                                  </td>
+                            </tr>
+                                                <tr bgcolor="#aaff88">
+                                                              <td align="center">
+                                     <a href="115.php?cod_remate=39933" onClick="pageTracker._trackEvent('Persona Fisica' ,'REMATE-P','39933' );">
+                                     <img src="images/icono/detalle.png" width="30" height="30" alt="detalle del remate"39933 /> </a>                      		  </td>
+                                  <td><div align="center"><span class="reporte">13/07/2015</span></div></td>
+                                  <td><span class="reporte">Alajuela</span></td>
+                                  <td><span class="reporte">Grecia</span></td>
+                                  <td><span class="reporte">San Roque</span></td>
+                                  <td><div align="right"><span class="reporte">225.45 m²</span></div></td>
+                                  <td><div align="right"><span class="reporte">$8,000.00</span></div></td>
+                                  <td>
+                                  	<div align="center">
+                                        <span class="reporte">
+											Persona Fisica                                        </span>
+                                    </div>
+                                  </td>
+                                  <td align="center">
+                                     
+		 <a href='#'
+			onmouseover='muestraDetEstado("Remate vigente para Primera Puja. \n  \n Debe confirmar en el Jusgado \
+			(con el numero de expediente) si se efectuarÃ¡ el remate \
+			en la fecha publicada, ya que no contamos con convenio \
+			para este acreedor.", event);'
+			onmouseout='ocultaDetEstado();' > <img src='images/icono/detalleEstadoV.png'
+			        width='30' height='30' alt='detalle del remate'/> 
+		 </a>                                  </td>
+                            </tr>
+                                                <tr bgcolor="#ffff99">
+                                                          <td align="center">
+                                     <a href="115.php?cod_remate=39929" onClick="pageTracker._trackEvent('Banco Nacional de Costa Rica' ,'REMATE-P','39929' );">
+                                     <img src="images/icono/detalle.png" width="30" height="30" alt="detalle del remate"39929 /> </a>                      		  </td>
+                                  <td><div align="center"><span class="reporte">27/05/2015</span></div></td>
+                                  <td><span class="reporte">Cartago</span></td>
+                                  <td><span class="reporte">Central</span></td>
+                                  <td><span class="reporte">Aguacaliente (San Francisco)</span></td>
+                                  <td><div align="right"><span class="reporte">215.38 m²</span></div></td>
+                                  <td><div align="right"><span class="reporte">¢10,500,000.00</span></div></td>
+                                  <td>
+                                  	<div align="center">
+                                        <span class="reporte">
+											<img src="verimageslogo.php?id=1" width='60' height='30' border='0'>                                        </span>
+                                    </div>
+                                  </td>
+                                  <td align="center">
+                                     
+		 <a href='#'
+			onmouseover='muestraDetEstado("Remate vigente para Primera Puja. \n  \n Debe confirmar en el Jusgado \
+			(con el numero de expediente) si se efectuarÃ¡ el remate \
+			en la fecha publicada, ya que el acreedor aun no nos ha \
+			proporciona la informacio complementaria para este remate. ", event);'
+			onmouseout='ocultaDetEstado();' > <img src='images/icono/detalleEstadoV.png'
+			        width='30' height='30' alt='detalle del remate'/> 
+		 </a>                                  </td>
+                            </tr>
+                                                <tr>
+                                                                  <td align="center">
+                                     <a href="115.php?cod_remate=39935" onClick="pageTracker._trackEvent('Banco Credito Agricola' ,'REMATE-P','39935' );">
+                                     <img src="images/icono/detalle.png" width="30" height="30" alt="detalle del remate"39935 /> </a>                      		  </td>
+                                  <td><div align="center"><span class="reporte">14/04/2015</span></div></td>
+                                  <td><span class="reporte">Cartago</span></td>
+                                  <td><span class="reporte">Central</span></td>
+                                  <td><span class="reporte">Dulce Nombre</span></td>
+                                  <td><div align="right"><span class="reporte">271.00 m²</span></div></td>
+                                  <td><div align="right"><span class="reporte">$57,374.29</span></div></td>
+                                  <td>
+                                  	<div align="center">
+                                        <span class="reporte">
+											Banco Credito Agricola                                        </span>
+                                    </div>
+                                  </td>
+                                  <td align="center">
+                                     
+		 <a href='#'
+			onmouseover='muestraDetEstado("Remate vigente para Primera Puja. \n  \n Debe confirmar en el Jusgado \
+			(con el numero de expediente) si se efectuarÃ¡ el remate \
+			en la fecha publicada, ya que no contamos con convenio \
+			para este acreedor.", event);'
+			onmouseout='ocultaDetEstado();' > <img src='images/icono/detalleEstadoV.png'
+			        width='30' height='30' alt='detalle del remate'/> 
+		 </a>                                  </td>
+                            </tr>
+                                                <tr bgcolor="#ffff99">
+                                                          <td align="center">
+                                     <a href="115.php?cod_remate=39923" onClick="pageTracker._trackEvent('Banco Nacional de Costa Rica' ,'REMATE-P','39923' );">
+                                     <img src="images/icono/detalle.png" width="30" height="30" alt="detalle del remate"39923 /> </a>                      		  </td>
+                                  <td><div align="center"><span class="reporte">14/04/2015</span></div></td>
+                                  <td><span class="reporte">Guanacaste</span></td>
+                                  <td><span class="reporte">Nicoya</span></td>
+                                  <td><span class="reporte">Nicoya</span></td>
+                                  <td><div align="right"><span class="reporte">48,957.63 m²</span></div></td>
+                                  <td><div align="right"><span class="reporte">¢211,441,774.67</span></div></td>
+                                  <td>
+                                  	<div align="center">
+                                        <span class="reporte">
+											<img src="verimageslogo.php?id=1" width='60' height='30' border='0'>                                        </span>
+                                    </div>
+                                  </td>
+                                  <td align="center">
+                                     
+		 <a href='#'
+			onmouseover='muestraDetEstado("Remate vigente para Primera Puja. \n  \n Debe confirmar en el Jusgado \
+			(con el numero de expediente) si se efectuarÃ¡ el remate \
+			en la fecha publicada, ya que el acreedor aun no nos ha \
+			proporciona la informacio complementaria para este remate. ", event);'
+			onmouseout='ocultaDetEstado();' > <img src='images/icono/detalleEstadoV.png'
+			        width='30' height='30' alt='detalle del remate'/> 
+		 </a>                                  </td>
+                            </tr>
+                                                <tr bgcolor="#ffff99">
+                                                          <td align="center">
+                                     <a href="115.php?cod_remate=39930" onClick="pageTracker._trackEvent('Banco Nacional de Costa Rica' ,'REMATE-P','39930' );">
+                                     <img src="images/icono/detalle.png" width="30" height="30" alt="detalle del remate"39930 /> </a>                      		  </td>
+                                  <td><div align="center"><span class="reporte">12/05/2015</span></div></td>
+                                  <td><span class="reporte">Guanacaste</span></td>
+                                  <td><span class="reporte">Carrillo</span></td>
+                                  <td><span class="reporte">Palmira</span></td>
+                                  <td><div align="right"><span class="reporte">390.39 m²</span></div></td>
+                                  <td><div align="right"><span class="reporte">¢8,868,297.59</span></div></td>
+                                  <td>
+                                  	<div align="center">
+                                        <span class="reporte">
+											<img src="verimageslogo.php?id=1" width='60' height='30' border='0'>                                        </span>
+                                    </div>
+                                  </td>
+                                  <td align="center">
+                                     
+		 <a href='#'
+			onmouseover='muestraDetEstado("Remate vigente para Primera Puja. \n  \n Debe confirmar en el Jusgado \
+			(con el numero de expediente) si se efectuarÃ¡ el remate \
+			en la fecha publicada, ya que el acreedor aun no nos ha \
+			proporciona la informacio complementaria para este remate. ", event);'
+			onmouseout='ocultaDetEstado();' > <img src='images/icono/detalleEstadoV.png'
+			        width='30' height='30' alt='detalle del remate'/> 
+		 </a>                                  </td>
+                            </tr>
+                                                <tr bgcolor="#ffff99">
+                                                          <td align="center">
+                                     <a href="115.php?cod_remate=39932" onClick="pageTracker._trackEvent('Banco Nacional de Costa Rica' ,'REMATE-P','39932' );">
+                                     <img src="images/icono/detalle.png" width="30" height="30" alt="detalle del remate"39932 /> </a>                      		  </td>
+                                  <td><div align="center"><span class="reporte">20/05/2015</span></div></td>
+                                  <td><span class="reporte">Guanacaste</span></td>
+                                  <td><span class="reporte">Carrillo</span></td>
+                                  <td><span class="reporte">Belén</span></td>
+                                  <td><div align="right"><span class="reporte">231.01 m²</span></div></td>
+                                  <td><div align="right"><span class="reporte">¢6,494,028.51</span></div></td>
+                                  <td>
+                                  	<div align="center">
+                                        <span class="reporte">
+											<img src="verimageslogo.php?id=1" width='60' height='30' border='0'>                                        </span>
+                                    </div>
+                                  </td>
+                                  <td align="center">
+                                     
+		 <a href='#'
+			onmouseover='muestraDetEstado("Remate vigente para Primera Puja. \n  \n Debe confirmar en el Jusgado \
+			(con el numero de expediente) si se efectuarÃ¡ el remate \
+			en la fecha publicada, ya que el acreedor aun no nos ha \
+			proporciona la informacio complementaria para este remate. ", event);'
+			onmouseout='ocultaDetEstado();' > <img src='images/icono/detalleEstadoV.png'
+			        width='30' height='30' alt='detalle del remate'/> 
+		 </a>                                  </td>
+                            </tr>
+                                                <tr bgcolor="#aaff88">
+                                                              <td align="center">
+                                     <a href="115.php?cod_remate=39947" onClick="pageTracker._trackEvent('Banco Popular y de Desarrollo Comunal' ,'REMATE-P','39947' );">
+                                     <img src="images/icono/detalle.png" width="30" height="30" alt="detalle del remate"39947 /> </a>                      		  </td>
+                                  <td><div align="center"><span class="reporte">14/04/2015</span></div></td>
+                                  <td><span class="reporte">Guanacaste</span></td>
+                                  <td><span class="reporte">Tilarán</span></td>
+                                  <td><span class="reporte">Tilarán</span></td>
+                                  <td><div align="right"><span class="reporte">527.81 m²</span></div></td>
+                                  <td><div align="right"><span class="reporte">¢37,000,000.00</span></div></td>
+                                  <td>
+                                  	<div align="center">
+                                        <span class="reporte">
+											Banco Popular y de Desarrollo Comunal                                        </span>
+                                    </div>
+                                  </td>
+                                  <td align="center">
+                                     
+		 <a href='#'
+			onmouseover='muestraDetEstado("Remate vigente para Primera Puja. \n  \n Debe confirmar en el Jusgado \
+			(con el numero de expediente) si se efectuarÃ¡ el remate \
+			en la fecha publicada, ya que no contamos con convenio \
+			para este acreedor.", event);'
+			onmouseout='ocultaDetEstado();' > <img src='images/icono/detalleEstadoV.png'
+			        width='30' height='30' alt='detalle del remate'/> 
+		 </a>                                  </td>
+                            </tr>
+                                                <tr>
+                                                                  <td align="center">
+                                     <a href="115.php?cod_remate=39925" onClick="pageTracker._trackEvent('Persona Fisica' ,'REMATE-P','39925' );">
+                                     <img src="images/icono/detalle.png" width="30" height="30" alt="detalle del remate"39925 /> </a>                      		  </td>
+                                  <td><div align="center"><span class="reporte">04/05/2015</span></div></td>
+                                  <td><span class="reporte">Guanacaste</span></td>
+                                  <td><span class="reporte">Nandayure</span></td>
+                                  <td><span class="reporte">San Pablo</span></td>
+                                  <td><div align="right"><span class="reporte">511.23 m²</span></div></td>
+                                  <td><div align="right"><span class="reporte">¢1,680,000.00</span></div></td>
+                                  <td>
+                                  	<div align="center">
+                                        <span class="reporte">
+											Persona Fisica                                        </span>
+                                    </div>
+                                  </td>
+                                  <td align="center">
+                                     
+		 <a href='#'
+			onmouseover='muestraDetEstado("Remate vigente para Primera Puja. \n  \n Debe confirmar en el Jusgado \
+			(con el numero de expediente) si se efectuarÃ¡ el remate \
+			en la fecha publicada, ya que no contamos con convenio \
+			para este acreedor.", event);'
+			onmouseout='ocultaDetEstado();' > <img src='images/icono/detalleEstadoV.png'
+			        width='30' height='30' alt='detalle del remate'/> 
+		 </a>                                  </td>
+                            </tr>
+                                                <tr bgcolor="#aaff88">
+                                                              <td align="center">
+                                     <a href="115.php?cod_remate=39937" onClick="pageTracker._trackEvent('Persona Juridica' ,'REMATE-P','39937' );">
+                                     <img src="images/icono/detalle.png" width="30" height="30" alt="detalle del remate"39937 /> </a>                      		  </td>
+                                  <td><div align="center"><span class="reporte">24/06/2015</span></div></td>
+                                  <td><span class="reporte">Puntarenas</span></td>
+                                  <td><span class="reporte">Puntarenas</span></td>
+                                  <td><span class="reporte">Cobano</span></td>
+                                  <td><div align="right"><span class="reporte">1,291.69 m²</span></div></td>
+                                  <td><div align="right"><span class="reporte">$30,212.00</span></div></td>
+                                  <td>
+                                  	<div align="center">
+                                        <span class="reporte">
+											Persona Juridica                                        </span>
+                                    </div>
+                                  </td>
+                                  <td align="center">
+                                     
+		 <a href='#'
+			onmouseover='muestraDetEstado("Remate vigente para Primera Puja. \n  \n Debe confirmar en el Jusgado \
+			(con el numero de expediente) si se efectuarÃ¡ el remate \
+			en la fecha publicada, ya que no contamos con convenio \
+			para este acreedor.", event);'
+			onmouseout='ocultaDetEstado();' > <img src='images/icono/detalleEstadoV.png'
+			        width='30' height='30' alt='detalle del remate'/> 
+		 </a>                                  </td>
+                            </tr>
+                                                <tr>
+                                                                  <td align="center">
+                                     <a href="115.php?cod_remate=39924" onClick="pageTracker._trackEvent('Persona Fisica' ,'REMATE-P','39924' );">
+                                     <img src="images/icono/detalle.png" width="30" height="30" alt="detalle del remate"39924 /> </a>                      		  </td>
+                                  <td><div align="center"><span class="reporte">30/04/2015</span></div></td>
+                                  <td><span class="reporte">Puntarenas</span></td>
+                                  <td><span class="reporte">Buenos Aires</span></td>
+                                  <td><span class="reporte">Potrero Grande</span></td>
+                                  <td><div align="right"><span class="reporte">23,845.00 m²</span></div></td>
+                                  <td><div align="right"><span class="reporte">¢5,022,470.68</span></div></td>
+                                  <td>
+                                  	<div align="center">
+                                        <span class="reporte">
+											Persona Fisica                                        </span>
+                                    </div>
+                                  </td>
+                                  <td align="center">
+                                     
+		 <a href='#'
+			onmouseover='muestraDetEstado("Remate vigente para Primera Puja. \n  \n Debe confirmar en el Jusgado \
+			(con el numero de expediente) si se efectuarÃ¡ el remate \
+			en la fecha publicada, ya que no contamos con convenio \
+			para este acreedor.", event);'
+			onmouseout='ocultaDetEstado();' > <img src='images/icono/detalleEstadoV.png'
+			        width='30' height='30' alt='detalle del remate'/> 
+		 </a>                                  </td>
+                            </tr>
+                                                <tr bgcolor="#aaff88">
+                                                              <td align="center">
+                                     <a href="115.php?cod_remate=39945" onClick="pageTracker._trackEvent('Banco Popular y de Desarrollo Comunal' ,'REMATE-P','39945' );">
+                                     <img src="images/icono/detalle.png" width="30" height="30" alt="detalle del remate"39945 /> </a>                      		  </td>
+                                  <td><div align="center"><span class="reporte">01/09/2015</span></div></td>
+                                  <td><span class="reporte">Puntarenas</span></td>
+                                  <td><span class="reporte">Osa</span></td>
+                                  <td><span class="reporte">Puerto Cortes</span></td>
+                                  <td><div align="right"><span class="reporte">44,989.11 m²</span></div></td>
+                                  <td><div align="right"><span class="reporte">¢10,966,332.68</span></div></td>
+                                  <td>
+                                  	<div align="center">
+                                        <span class="reporte">
+											Banco Popular y de Desarrollo Comunal                                        </span>
+                                    </div>
+                                  </td>
+                                  <td align="center">
+                                     
+		 <a href='#'
+			onmouseover='muestraDetEstado("Remate vigente para Primera Puja. \n  \n Debe confirmar en el Jusgado \
+			(con el numero de expediente) si se efectuarÃ¡ el remate \
+			en la fecha publicada, ya que no contamos con convenio \
+			para este acreedor.", event);'
+			onmouseout='ocultaDetEstado();' > <img src='images/icono/detalleEstadoV.png'
+			        width='30' height='30' alt='detalle del remate'/> 
+		 </a>                                  </td>
+                            </tr>
+                                                <tr>
+                                                                  <td align="center">
+                                     <a href="115.php?cod_remate=39946" onClick="pageTracker._trackEvent('Banco Popular y de Desarrollo Comunal' ,'REMATE-P','39946' );">
+                                     <img src="images/icono/detalle.png" width="30" height="30" alt="detalle del remate"39946 /> </a>                      		  </td>
+                                  <td><div align="center"><span class="reporte">01/09/2015</span></div></td>
+                                  <td><span class="reporte">Puntarenas</span></td>
+                                  <td><span class="reporte">Osa</span></td>
+                                  <td><span class="reporte">Puerto Cortes</span></td>
+                                  <td><div align="right"><span class="reporte">1,001.98 m²</span></div></td>
+                                  <td><div align="right"><span class="reporte">¢10,966,332.68</span></div></td>
+                                  <td>
+                                  	<div align="center">
+                                        <span class="reporte">
+											Banco Popular y de Desarrollo Comunal                                        </span>
+                                    </div>
+                                  </td>
+                                  <td align="center">
+                                     
+		 <a href='#'
+			onmouseover='muestraDetEstado("Remate vigente para Primera Puja. \n  \n Debe confirmar en el Jusgado \
+			(con el numero de expediente) si se efectuarÃ¡ el remate \
+			en la fecha publicada, ya que no contamos con convenio \
+			para este acreedor.", event);'
+			onmouseout='ocultaDetEstado();' > <img src='images/icono/detalleEstadoV.png'
+			        width='30' height='30' alt='detalle del remate'/> 
+		 </a>                                  </td>
+                            </tr>
+                                                <tr bgcolor="#aaff88">
+                                                              <td align="center">
+                                     <a href="115.php?cod_remate=39940" onClick="pageTracker._trackEvent('Grupo Mutual Alajuela-La Vivienda de Ahorro y Prestamo' ,'REMATE-P','39940' );">
+                                     <img src="images/icono/detalle.png" width="30" height="30" alt="detalle del remate"39940 /> </a>                      		  </td>
+                                  <td><div align="center"><span class="reporte">04/05/2015</span></div></td>
+                                  <td><span class="reporte">Puntarenas</span></td>
+                                  <td><span class="reporte">Coto Brus</span></td>
+                                  <td><span class="reporte">San Vito</span></td>
+                                  <td><div align="right"><span class="reporte">206.91 m²</span></div></td>
+                                  <td><div align="right"><span class="reporte">¢1,650,000.00</span></div></td>
+                                  <td>
+                                  	<div align="center">
+                                        <span class="reporte">
+											Grupo Mutual Alajuela-La Vivienda de Ahorro y Prestamo                                        </span>
+                                    </div>
+                                  </td>
+                                  <td align="center">
+                                     
+		 <a href='#'
+			onmouseover='muestraDetEstado("Remate vigente para Primera Puja. \n  \n Debe confirmar en el Jusgado \
+			(con el numero de expediente) si se efectuarÃ¡ el remate \
+			en la fecha publicada, ya que no contamos con convenio \
+			para este acreedor.", event);'
+			onmouseout='ocultaDetEstado();' > <img src='images/icono/detalleEstadoV.png'
+			        width='30' height='30' alt='detalle del remate'/> 
+		 </a>                                  </td>
+                            </tr>
+                                                <tr bgcolor="#ffff99">
+                                                          <td align="center">
+                                     <a href="115.php?cod_remate=39927" onClick="pageTracker._trackEvent('Banco Nacional de Costa Rica' ,'REMATE-P','39927' );">
+                                     <img src="images/icono/detalle.png" width="30" height="30" alt="detalle del remate"39927 /> </a>                      		  </td>
+                                  <td><div align="center"><span class="reporte">21/04/2015</span></div></td>
+                                  <td><span class="reporte">Puntarenas</span></td>
+                                  <td><span class="reporte">Coto Brus</span></td>
+                                  <td><span class="reporte">Sabalito</span></td>
+                                  <td><div align="right"><span class="reporte">13,485.08 m²</span></div></td>
+                                  <td><div align="right"><span class="reporte">¢4,000,000.00</span></div></td>
+                                  <td>
+                                  	<div align="center">
+                                        <span class="reporte">
+											<img src="verimageslogo.php?id=1" width='60' height='30' border='0'>                                        </span>
+                                    </div>
+                                  </td>
+                                  <td align="center">
+                                     
+		 <a href='#'
+			onmouseover='muestraDetEstado("Remate vigente para Primera Puja. \n  \n Debe confirmar en el Jusgado \
+			(con el numero de expediente) si se efectuarÃ¡ el remate \
+			en la fecha publicada, ya que el acreedor aun no nos ha \
+			proporciona la informacio complementaria para este remate. ", event);'
+			onmouseout='ocultaDetEstado();' > <img src='images/icono/detalleEstadoV.png'
+			        width='30' height='30' alt='detalle del remate'/> 
+		 </a>                                  </td>
+                            </tr>
+                                                <tr bgcolor="#ffff99">
+                                                          <td align="center">
+                                     <a href="115.php?cod_remate=39926" onClick="pageTracker._trackEvent('Banco Nacional de Costa Rica' ,'REMATE-P','39926' );">
+                                     <img src="images/icono/detalle.png" width="30" height="30" alt="detalle del remate"39926 /> </a>                      		  </td>
+                                  <td><div align="center"><span class="reporte">21/04/2015</span></div></td>
+                                  <td><span class="reporte">Puntarenas</span></td>
+                                  <td><span class="reporte">Coto Brus</span></td>
+                                  <td><span class="reporte">Sabalito</span></td>
+                                  <td><div align="right"><span class="reporte">25,073.84 m²</span></div></td>
+                                  <td><div align="right"><span class="reporte">¢17,000,000.00</span></div></td>
+                                  <td>
+                                  	<div align="center">
+                                        <span class="reporte">
+											<img src="verimageslogo.php?id=1" width='60' height='30' border='0'>                                        </span>
+                                    </div>
+                                  </td>
+                                  <td align="center">
+                                     
+		 <a href='#'
+			onmouseover='muestraDetEstado("Remate vigente para Primera Puja. \n  \n Debe confirmar en el Jusgado \
+			(con el numero de expediente) si se efectuarÃ¡ el remate \
+			en la fecha publicada, ya que el acreedor aun no nos ha \
+			proporciona la informacio complementaria para este remate. ", event);'
+			onmouseout='ocultaDetEstado();' > <img src='images/icono/detalleEstadoV.png'
+			        width='30' height='30' alt='detalle del remate'/> 
+		 </a>                                  </td>
+                            </tr>
+                                                <tr bgcolor="#ffff99">
+                                                          <td align="center">
+                                     <a href="115.php?cod_remate=39943" onClick="pageTracker._trackEvent('Banco Nacional de Costa Rica' ,'REMATE-P','39943' );">
+                                     <img src="images/icono/detalle.png" width="30" height="30" alt="detalle del remate"39943 /> </a>                      		  </td>
+                                  <td><div align="center"><span class="reporte">18/05/2015</span></div></td>
+                                  <td><span class="reporte">Limón</span></td>
+                                  <td><span class="reporte">Pococí</span></td>
+                                  <td><span class="reporte">Guapiles</span></td>
+                                  <td><div align="right"><span class="reporte">200.00 m²</span></div></td>
+                                  <td><div align="right"><span class="reporte">¢5,910,147.97</span></div></td>
+                                  <td>
+                                  	<div align="center">
+                                        <span class="reporte">
+											<img src="verimageslogo.php?id=1" width='60' height='30' border='0'>                                        </span>
+                                    </div>
+                                  </td>
+                                  <td align="center">
+                                     
+		 <a href='#'
+			onmouseover='muestraDetEstado("Remate vigente para Primera Puja. \n  \n Debe confirmar en el Jusgado \
+			(con el numero de expediente) si se efectuarÃ¡ el remate \
+			en la fecha publicada, ya que el acreedor aun no nos ha \
+			proporciona la informacio complementaria para este remate. ", event);'
+			onmouseout='ocultaDetEstado();' > <img src='images/icono/detalleEstadoV.png'
+			        width='30' height='30' alt='detalle del remate'/> 
+		 </a>                                  </td>
+                            </tr>
+                                                <tr bgcolor="#ffff99">
+                                                          <td align="center">
+                                     <a href="115.php?cod_remate=39944" onClick="pageTracker._trackEvent('Banco Nacional de Costa Rica' ,'REMATE-P','39944' );">
+                                     <img src="images/icono/detalle.png" width="30" height="30" alt="detalle del remate"39944 /> </a>                      		  </td>
+                                  <td><div align="center"><span class="reporte">18/05/2015</span></div></td>
+                                  <td><span class="reporte">Limón</span></td>
+                                  <td><span class="reporte">Pococí</span></td>
+                                  <td><span class="reporte">Guapiles</span></td>
+                                  <td><div align="right"><span class="reporte">200.00 m²</span></div></td>
+                                  <td><div align="right"><span class="reporte">¢19,032,397.87</span></div></td>
+                                  <td>
+                                  	<div align="center">
+                                        <span class="reporte">
+											<img src="verimageslogo.php?id=1" width='60' height='30' border='0'>                                        </span>
+                                    </div>
+                                  </td>
+                                  <td align="center">
+                                     
+		 <a href='#'
+			onmouseover='muestraDetEstado("Remate vigente para Primera Puja. \n  \n Debe confirmar en el Jusgado \
+			(con el numero de expediente) si se efectuarÃ¡ el remate \
+			en la fecha publicada, ya que el acreedor aun no nos ha \
+			proporciona la informacio complementaria para este remate. ", event);'
+			onmouseout='ocultaDetEstado();' > <img src='images/icono/detalleEstadoV.png'
+			        width='30' height='30' alt='detalle del remate'/> 
+		 </a>                                  </td>
+                            </tr>
+                                </table>
+        </div> <!-- <div id="tabs-1"> -->
+
+
+
+
+
+
+
+        <div id="tabs-2">
+            <table width="90%" bordercolor="#E7AE02" border="1" align="center">
+                <tr bgcolor="#E7AE02">
+                  <td colspan="7" align="center"><span class="TitulosCen">Remates de Veh&iacute;culos publicados  HOY</span></td>
+                </tr>
+                <tr bgcolor="#E7AE02">
+                  <td align="center"><span class="reporteTit">Detalle</span></td>
+                  <td align="center"><span class="reporteTit">Fecha Remate <br>(d&iacute;a/mes/a&ntilde;o)</span></td>
+                  <td align="center"><span class="reporteTit">Marca</span></td>
+                  <td align="center"><span class="reporteTit">Año</span></td>
+                  <td align="center"><span class="reporteTit">Base</span></td>
+                  <td align="center"><span class="reporteTit">Quien Remata</span></td>
+                  <td align="center"><span class="reporteTit">Estado</span></td>
+                </tr>
+                                              <tr>
+                                                                  <td align="center">
+                                     <a href="116.php?cod_remate=39936"  onClick="pageTracker._trackEvent('Persona Juridica' ,'REMATE-V','39936' );">
+                                     <img src="images/icono/detalle.png" width="30" height="30" alt="detalle del remate"39936/>                         </a>                      </td>
+                                  <td><div align="center"><span class="reporte">19/05/2015</span></div></td>
+                                  <td><span class="reporte">LAND ROVER</span></td>
+                                  <td><span class="reporte">1994</span></td>
+                                  <td><div align="right"><span class="reporte">¢2,500,000.00</span></div></td>
+                                  <td>
+                                  	<div align="center">
+                                        <span class="reporte">
+											Persona Juridica                                        </span>
+                                    </div>
+                                  </td>
+                                  <td align="center">
+                                     
+		 <a href='#'
+			onmouseover='muestraDetEstado("Remate vigente para Primera Puja. \n  \n Debe confirmar en el Jusgado \
+			(con el numero de expediente) si se efectuarÃ¡ el remate \
+			en la fecha publicada, ya que no contamos con convenio \
+			para este acreedor.", event);'
+			onmouseout='ocultaDetEstado();' > <img src='images/icono/detalleEstadoV.png'
+			        width='30' height='30' alt='detalle del remate'/> 
+		 </a>                                  </td>
+              </tr>
+                                          <tr bgcolor="#aaff88">
+                                                              <td align="center">
+                                     <a href="116.php?cod_remate=39942"  onClick="pageTracker._trackEvent('Persona Juridica' ,'REMATE-V','39942' );">
+                                     <img src="images/icono/detalle.png" width="30" height="30" alt="detalle del remate"39942/>                         </a>                      </td>
+                                  <td><div align="center"><span class="reporte">22/04/2015</span></div></td>
+                                  <td><span class="reporte">HYUNDAI</span></td>
+                                  <td><span class="reporte">2001</span></td>
+                                  <td><div align="right"><span class="reporte">¢2,200,000.00</span></div></td>
+                                  <td>
+                                  	<div align="center">
+                                        <span class="reporte">
+											Persona Juridica                                        </span>
+                                    </div>
+                                  </td>
+                                  <td align="center">
+                                     
+		 <a href='#'
+			onmouseover='muestraDetEstado("Remate vigente para Primera Puja. \n  \n Debe confirmar en el Jusgado \
+			(con el numero de expediente) si se efectuarÃ¡ el remate \
+			en la fecha publicada, ya que no contamos con convenio \
+			para este acreedor.", event);'
+			onmouseout='ocultaDetEstado();' > <img src='images/icono/detalleEstadoV.png'
+			        width='30' height='30' alt='detalle del remate'/> 
+		 </a>                                  </td>
+              </tr>
+                                          <tr>
+                                                                  <td align="center">
+                                     <a href="116.php?cod_remate=39948"  onClick="pageTracker._trackEvent('Banco DAVIVIENDA' ,'REMATE-V','39948' );">
+                                     <img src="images/icono/detalle.png" width="30" height="30" alt="detalle del remate"39948/>                         </a>                      </td>
+                                  <td><div align="center"><span class="reporte">28/04/2015</span></div></td>
+                                  <td><span class="reporte">MITSUBISHI</span></td>
+                                  <td><span class="reporte">2008</span></td>
+                                  <td><div align="right"><span class="reporte">$6,213.04</span></div></td>
+                                  <td>
+                                  	<div align="center">
+                                        <span class="reporte">
+											Banco DAVIVIENDA                                        </span>
+                                    </div>
+                                  </td>
+                                  <td align="center">
+                                     
+		 <a href='#'
+			onmouseover='muestraDetEstado("Remate vigente para Primera Puja. \n  \n Debe confirmar en el Jusgado \
+			(con el numero de expediente) si se efectuarÃ¡ el remate \
+			en la fecha publicada, ya que no contamos con convenio \
+			para este acreedor.", event);'
+			onmouseout='ocultaDetEstado();' > <img src='images/icono/detalleEstadoV.png'
+			        width='30' height='30' alt='detalle del remate'/> 
+		 </a>                                  </td>
+              </tr>
+                          </table>
+        </div> <!-- <div id="tabs-2"> -->
+
+
+
+
+        <div id="tabs-3">
+            <table width="90%" bordercolor="#BE626F" border="1" align="center">
+                <tr bgcolor="#BE626F">
+                  <td colspan="6" align="center"><span class="TitulosCen">Remates de Joyer&iacute;a publicados  HOY</span></td>
+                </tr>
+                <tr bgcolor="#BE626F">
+                  <td align="center"><span class="reporteTit">Detalle</span></td>
+                  <td align="center"><span class="reporteTit">Fecha Remate <br>(d&iacute;a/mes/a&ntilde;o)</span></td>
+                  <td align="center"><span class="reporteTit">Marca</span></td>
+                  <td align="center"><span class="reporteTit">Base</span></td>
+                  <td align="center"><span class="reporteTit">Quien Remata</span></td>
+                  <td align="center"><span class="reporteTit">Estado</span></td>
+                </tr>
+                                              <tr>
+                                                                  <td align="center">
+                                     <a href="111.php?cod_remate="  onClick="pageTracker._trackEvent('' ,'REMATE-J','' );">
+                                     <img src="images/icono/detalle.png" width="30" height="30" alt="detalle del remate"/>                          </a>                      </td>
+                                  <td><div align="center"><span class="reporte"></span></div></td>
+                                  <td><span class="reporte"></span></td>
+                                  <td><div align="right"><span class="reporte">0.00</span></div></td>
+                                  <td>
+                                  	<div align="center">
+                                        <span class="reporte">
+											                                        </span>
+                                    </div>
+                                  </td>
+                                  <td align="center">
+                                     
+		 <a href='#'
+			onmouseover='muestraDetEstado(" \n Debe confirmar en el Jusgado \
+			(con el numero de expediente) si se efectuarÃ¡ el remate \
+			en la fecha publicada, ya que no contamos con convenio \
+			para este acreedor.", event);'
+			onmouseout='ocultaDetEstado();' > <img src='images/icono/detalleEstadoAinf.png'
+			        width='30' height='30' alt='detalle del remate'/> 
+		 </a>                                  </td>
+              </tr>
+                          </table>
+        </div> <!-- <div id="tabs-3"> -->
+
+
+
+
+
+        <div id="tabs-4">
+            <table width="90%" bordercolor="#50BAC7" border="1" align="center">
+                <tr bgcolor="#50BAC7">
+                  <td colspan="6" align="center"><span class="TitulosCen">Remates de Maquinaria y Otros publicados  HOY</span></td>
+                </tr>
+                <tr bgcolor="#50BAC7">
+                  <td align="center"><span class="reporteTit">Detalle</span></td>
+                  <td align="center"><span class="reporteTit">Fecha Remate <br>(d&iacute;a/mes/a&ntilde;o)</span></td>
+                  <td align="center"><span class="reporteTit">Marca</span></td>
+                  <td align="center"><span class="reporteTit">Base</span></td>
+                  <td align="center"><span class="reporteTit">Quien Remata</span></td>
+                  <td align="center"><span class="reporteTit">Estado</span></td>
+                </tr>
+                                              <tr>
+                                                                  <td align="center">
+                                     <a href="117.php?cod_remate= "  onClick="pageTracker._trackEvent('' ,'REMATE-M','' );">
+                                     <img src="images/icono/detalle.png" width="30" height="30" alt="detalle del remate"/>                          </a>                      </td>
+                                  <td><div align="center"><span class="reporte"></span></div></td>
+                                  <td><span class="reporte"></span></td>
+                                  <td><div align="right"><span class="reporte">0.00</span></div></td>
+                                  <td>
+                                  	<div align="center">
+                                        <span class="reporte">
+											                                        </span>
+                                    </div>
+                                  </td>
+                                  <td align="center">
+                                     
+		 <a href='#'
+			onmouseover='muestraDetEstado(" \n Debe confirmar en el Jusgado \
+			(con el numero de expediente) si se efectuarÃ¡ el remate \
+			en la fecha publicada, ya que no contamos con convenio \
+			para este acreedor.", event);'
+			onmouseout='ocultaDetEstado();' > <img src='images/icono/detalleEstadoAinf.png'
+			        width='30' height='30' alt='detalle del remate'/> 
+		 </a>                                  </td>
+              </tr>
+                          </table>
+        </div> <!-- <div id="tabs-4"> -->
+	</div> <!-- <div id="tabs"> -->
+
+
+
+<p>&nbsp;</p>
+ 
+
+
+
+
+
+
+
+
+<!--
+  <table border="1" align="center" bordercolor="#009999">
+  <tr>
+  <td width="75" align="center" rowspan="2"><span class="reporteNeg">Visitas</span></td>
+  <td width="75" align="center"><span class="reporte">Del d&iacute;a</span></td>
+  <td width="75" align="center"><span class="reporte">Del mes</span></td>
+  <td width="75" align="center"><span class="reporte">Del año</span></td>
+  </tr>
+  <tr>
+  <td width="75" align="center"><span class="reporte"></span></td>
+  <td width="75" align="center"><span class="reporte"></span></td>
+  <td width="75" align="center"><span class="reporte"></span></td>
+  </tr>
+  </table>
+ -->
+
+                  <!-- InstanceEndEditable --></td>
+            <td background="images/diseno/imagenes_r5_c6.jpg" width=21 ></td>
+          </tr>
+          <tr>
+            <td width="21" height="2"><img src="images/diseno/imagenes_r7_c1.jpg" /></td>
+            <td colspan="2" height="2" background="images/diseno/imagenes_r7_c2.jpg" ></td>
+            <td colspan="5" height="2" background="images/diseno/imagenes_r7_c4.jpg" ></td>
+            <td height="2" background="images/diseno/imagenes_r7_c5.jpg" ></td>
+            <td width="21" height="2" background="images/diseno/imagenes_r7_c6.jpg" ></td>
+          </tr>
+      </table>
+      <div>      </div>
+      </div>      
+   	  <div id="accDirecto">
+   		<div id="redesSoc">
+				<a href="http://www.facebook.com/home.php#/profile.php?ref=name&amp;id=100000390265252" 
+                target="_blank">
+                <img src="images/icono/facebook.jpg" alt="facebookCrRemates" />                </a>
+                <a href="http://twitter.com/crremates" target="_blank"> 
+                <img src="images/icono/twitter.jpg" alt="twitterCrRemates" />                </a>   		
+          <a href="http://www.youtube.com/results?search_query=crremates" target="_blank"> 
+          <img src="images/icono/youtube.png" alt="youtubeCrRemates" />                </a>        </div>
+        <br/>
+        <div id="session">
+                            <font color="white"><strong>
+                    Bienvenido(a): Visitante
+                    <br/>
+                    <a href="505.php" target="_self"> 
+						Iniciar sesion
+                    </a>
+                </strong>			</font>
+                    
+        </div>
+        <br/>
+        <div id="calendario" align="center" >
+			<!--calendar-->
+          <form >
+			<font color="white"><strong>
+			Seguimiento de Remates
+            </strong>			</font>
+            <br>
+            
+            					<select size="1" id="mes" name="mes" class="m1" onChange="showUser(this.value,'0',0)">
+                              <option value="1">enero
+      <option value="2">febrero
+      <option selected value="3">marzo
+      <option value="4">abril
+      <option value="5">mayo
+      <option value="6">junio
+      <option value="7">julio
+      <option value="8">agosto
+      <option value="9">septiembre
+      <option value="10">octubre
+      <option value="11">noviembre
+      <option value="12">diciembre
+	</select>
+					&nbsp;&nbsp;&nbsp;
+					<select size="1" id="ano" name="ano" class="m1" onChange="showUser('0',this.value,0)">
+					      <option value="2008">2008
+      <option value="2009">2009
+      <option value="2010">2010
+      <option value="2011">2011
+      <option value="2012">2012
+      <option value="2013">2013
+      <option value="2014">2014
+      <option selected value="2015">2015
+      <option value="2016">2016
+      <option value="2017">2017
+      <option value="2018">2018
+					</select><br>
+            </form>
+            <div id="txtHint" ><b>Calendarion de seguimiento here.</b></div>
+            <script type="text/javascript">
+				showUser('0','0',0);
+			</script>
+		  <!--calendar-->
+        </div>
+        <br/>
+        <div id="botones" align="center">
+
+            	<a href="http://www.bncr.fi.cr/BN/VentaBienes/Acceso/index.asp" target="_blank"
+                onClick="pageTracker._trackEvent('Banco Nacional de Costa Rica' ,'VB','logo' );">
+		            <img src="images/interLinks/LOGO-BN-VB.gif" alt="Venta de Bienes del BNCR" width="205" />                </a>
+
+                    
+            	<a href="304.php" target="_self">
+		            <img src="images/botones/logoClub.gif" alt="Club CrRemates" />                </a>
+				<br>
+        </div>
+        
+        <!-- InstanceBeginEditable name="AccesoDirec" --><!-- InstanceEndEditable --><br />
+   		<div id="anuncios">
+        <!-- InstanceBeginEditable name="Anuncios" -->
+			<span>REMATES MAS VISITADOS</span><ul id='slide2'>
+				<li> <a href='112.php?cod_remate=38206' onClick='pageTracker._trackEvent('Persona Juridica' ,'REMATE-P','38206' ); ><strong>Persona Juridica</strong> remata  en Heredia, Heredia, Mercedes Precio: ¢ 25,000,000.00
+						</a><br><br>  <a href='112.php?cod_remate=38346' onClick='pageTracker._trackEvent('Persona Juridica' ,'REMATE-P','38346' ); ><strong>Persona Juridica</strong> remata  en San Jose, Central, Pavas Precio: $ 67,000.00
+						</a><br><br>  <a href='112.php?cod_remate=35923' onClick='pageTracker._trackEvent('Banco Credito Agricola' ,'REMATE-P','35923' ); ><strong>Banco Credito Agricola</strong> remata  en Puntarenas, Garabito, Tarcoles Precio: ¢ 22,981,497.60
+						</a><br><br>  </li>
+						   		  <li> <a href='112.php?cod_remate=36546' onClick='pageTracker._trackEvent('Persona Juridica' ,'REMATE-P','36546' ); ><strong>Persona Juridica</strong> remata  en Alajuela, Naranjo, Rosario Precio: ¢ 69,591,534.11
+						</a><br><br>  <a href='112.php?cod_remate=36876' onClick='pageTracker._trackEvent('Banco Nacional de Costa Rica' ,'REMATE-P','36876' ); ><strong>Banco Nacional de Costa Rica</strong> remata  en Limón, Matina, Batán Precio: ¢ 1,500,000.00
+						</a><br><br>  <a href='112.php?cod_remate=36888' onClick='pageTracker._trackEvent('Banco Popular y de Desarrollo Comunal' ,'REMATE-P','36888' ); ><strong>Banco Popular y de Desarrollo Comunal</strong> remata  en Alajuela, San Ramón, San Isidro Precio: ¢ 20,726,978.10
+						</a><br><br>  </li>
+						   		  <li> <a href='112.php?cod_remate=37162' onClick='pageTracker._trackEvent('Banco Nacional de Costa Rica' ,'REMATE-P','37162' ); ><strong>Banco Nacional de Costa Rica</strong> remata  en Alajuela, Grecia, Bolivar Precio: ¢ 20,449,013.87
+						</a><br><br>  <a href='112.php?cod_remate=37163' onClick='pageTracker._trackEvent('Banco Credito Agricola' ,'REMATE-P','37163' ); ><strong>Banco Credito Agricola</strong> remata  en Alajuela, Upala, Upala Precio: ¢ 40,990,000.00
+						</a><br><br>  <a href='112.php?cod_remate=37242' onClick='pageTracker._trackEvent('Persona Juridica' ,'REMATE-P','37242' ); ><strong>Persona Juridica</strong> remata  en Alajuela, Poás, Carrillo Precio: ¢ 1,876,970.17
+						</a><br><br>  </li>
+						   		  <li> <a href='112.php?cod_remate=37848' onClick='pageTracker._trackEvent('COOCIQUE R.L.' ,'REMATE-P','37848' ); ><strong>COOCIQUE R.L.</strong> remata  en Alajuela, San Carlos, Florencia Precio: ¢ 15,838,626.33
+						</a><br><br>   	</li>
+	      </ul>     <!-- InstanceEndEditable -->      
+			<script type="text/javascript">
+			var $jQ2 = jQuery.noConflict();
+				$jQ2(function() {
+					$jQ2('#slide2').ulslide({
+						statusbar: true,
+						width: 190,
+						height: 230,
+						effect: {
+							type: 'slide', // slide or fade
+							axis: 'x',     // x, y
+							distance: 40   // Distance between frames
+						},
+						mousewheel: true,
+						duration: 2500,
+						autoslide: 5000,
+						pager: '#slide2-pager'
+					});
+				});
+			</script>
+		</div> <!-- anuncios -->
+      </div>
+	</div><!--/content-->
+  </div>  <!--/main-->
+        <div id="pie">
+    		<div align="center">
+               2008-2013. Todos los derechos reservados    CrRemates S.A.    	
+            </div>      
+        </div>
+</div>
+<!--/#container-->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-10695469-1");
+pageTracker._trackPageview();
+} catch(err) {}
+</script>
+</body>
+
+
+<!-- InstanceEnd --></html>

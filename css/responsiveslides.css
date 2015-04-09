@@ -1,0 +1,137 @@
+/*! http://responsiveslides.com v1.53 by @viljamis */
+.sliders{
+          width: 470px;
+          float: left;
+          min-height: 1px;
+          margin-left: 30px;
+      }
+      .span3 {
+          width: 270px;
+          float: left;
+            min-height: 1px;
+            margin-left: 30px;
+}
+h3.title-property{margin:0;}
+
+.subheading{ display:block; margin-bottom:10px;}
+
+.price{ font-size:20px; color:#35abd2;}
+#listing .price, #featured .price, .small-list .price{ font-size:20px; color:#222;}
+
+.specs-property .text1{ display:block;  padding-bottom:5px; margin-bottom:5px;}
+.specs-property .meter{  display:block; background:url(../images/icon-house.png) center left no-repeat; padding-left:28px; padding-right:5px;}
+.specs-property .bed{  display:block; background:url(../images/icon-bed.png) center left no-repeat; padding-left:28px; padding-right:5px;}
+.specs-property .bath{  display:block; background:url(../images/icon-bath.png) center left no-repeat; padding-left:28px; padding-right:5px;}
+.specs-property .car{  display:block; background:url(../images/icon-car.png) center left no-repeat; padding-left:28px; padding-right:5px;}
+.specs-property span{border-bottom:solid 1px #ddd; padding-bottom:5px; margin-bottom:5px;}
+.specs-property .description{margin-top:20px;}
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
+
+
+/* new added */
+
+
+.callbacks_container {
+  position: relative;
+  float: left;
+  width: 100%;
+  }
+  
+
+
+.callbacks {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.callbacks li {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.callbacks img {
+  display: block;
+  position: relative;
+  z-index: 1;
+  height: auto;
+  width: 100%;
+  border: 0;
+  }
+
+.callbacks .caption {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  font-size: 14px;
+  text-shadow: none;
+  color: #fff;
+  background: #000;
+  background: rgba(0,0,0, .8);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10px 20px;
+  margin: 0;
+  max-width: none;
+  }
+
+.callbacks_nav {
+  position: absolute;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  top: 40%;
+  left: 1%;
+  opacity: 0.7;
+  z-index: 3;
+  text-indent: -9999px;
+  overflow: hidden;
+  text-decoration: none;
+  height: 61px;
+  width: 38px;
+  background: transparent url("../img/themes.gif") no-repeat left top;
+  }
+
+.callbacks_nav:active {
+  opacity: 1.0;
+  }
+
+.callbacks_nav.next {
+  left: auto;
+  background-position: right top;
+  right: 1%;
+  }
