@@ -86,7 +86,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     center: myLatlng,
                     mapTypeId: google.maps.MapTypeId.ROADMAP
                 }
+                var bounds = new google.maps.LatLngBounds();
+         var publications = [];
+       
+      //Load Markers from the XML File, Check (map_process.php)
 
+        for(var i = 0; i < publications.length; i++){
+            
+            create_marker(publications[i].point, publications[i].name, publications[i].address, false, false, false, url2+"/"+ publications[i].type +".png", publications[i].photo, publications[i].id, publications[i].observacion);
+            bounds.extend(publications[i].point);
+        
+        }
+        
+        map.fitBounds(bounds);
                 map = new google.maps.Map($("#google_map").get(0), myOptions);
 
                 infoWindow = new google.maps.InfoWindow();
@@ -210,7 +222,7 @@ if ($this->session->userdata('usuario') == TRUE) {
                         } ?>  "><a href="<?php echo base_url(); ?>index.php/Publicadas/publicacion"><span>Mis Publicaciones</span></a></li>
                                 <li class="mainmenu-item mainmenu-item-5381 <?php if ($dondeestoy == 'Favoritos') {
                             echo 'active';
-                        } ?>  "><a href="<?php echo base_url(); ?>index.php/Publicadas/favorito"><span>Mis Favoritos</span></a></li>
+                        } ?>  "><a href="<?php echo base_url(); ?>index.php/Publicadas/favorito"><span>Mis Favoritos <span style="color: #E13300">❤</span></span></a></li>
                                 <li class="mainmenu-item mainmenu-item-5441 <?php if ($dondeestoy == 'Publicar') {
                             echo 'active';
                         } ?>  "><a href="<?php echo base_url(); ?>index.php/Publicar/construcciones"><span>Mapee Su Anuncio</span></a></li>

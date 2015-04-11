@@ -273,11 +273,12 @@
                         <div class="mensajebienvenida">
                             <div id="carousel">
 					<img src="images/001.jpg" />
-					<img src="images/002.jpg" />
+                                        <img src="images/002.jpg" />
+					<img src="images/006.jpg" />
 					<img src="images/003.jpg" />
 					<img src="images/004.jpg" />
                                         <img src="images/005.jpg" />
-					<img src="images/006.jpg" />
+					
 					
 				</div>
                         </div>

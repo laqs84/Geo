@@ -155,10 +155,13 @@ class Publicadas extends CI_Controller {
 			$this->load->helper(array('form','url','date','html'));
 			$data["title"] = "GeoValores";
 			$data["title_page"] = "Mis Favoritos";
-			$data["publicaciones"] = $this->DBModel->selectJoinPublicaciones('publicaciones','publicaciones_marcadas',$this->session->userdata('idUsuario'));
+                        $this->load->model('InicioModel');
+                        $favorita =  $this->InicioModel->selectfavorita('publicaciones_marcadas',$idUsuario);
+                        $data['favorita'] = $favorita;
+			
 			$this->load->view('misVentas/favoritos', $data);
 		}
-		else{
+		else {
 			redirect(base_url().'index.php/Login/adminuser');
 		}
 		

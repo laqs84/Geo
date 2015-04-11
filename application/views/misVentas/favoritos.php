@@ -6,40 +6,108 @@
             <div class="title-page"><h1><?php echo $title_page ?></h1></div>
             <?php include_once('/../columnMenu.php') ;?>
             <div class="box-publicar" id="publi-detalles">
-				<table class="table">
-				   <thead>
-				      <tr>
-				         <th>Categoría</th>
-				         <th>Tiempo</th>
-				         <th>Fecha Publicación</th>
-				         
-				         
-				      </tr>
-				   </thead>
-				   <tbody>
-				   <?php 
-                                   if($publicaciones){
-				   		$color = array('active','danger','warning','success');
-				   		$cont = 0;
-				   		foreach ($publicaciones as $value){
-				   	?>		
-						<tr class="<?php echo $color[$cont]?>">
-							<td><a href="<?php  echo base_url(); ?>index.php/Publicadas/show/<?php echo $value['idPublicacion'] ?>"><?php echo $value['tipo_categoria']?></a></td>
-							<td><?php echo $value['tiempo']?></td>
-							<td><?php echo $value['date_publicacion']?></td>
-								
-						</tr>
-					<?php 
-							$cont +=1;
-							if($cont == 4)
-							{
-								$cont = 0;
-							}			
-				   		}
+			 <div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">Mapa</a></li>
+    <li><a href="#tabs-2">Listado</a></li>
+   
+  </ul>
+  <div id="tabs-1">
+    <div id="google_map"></div>
+  </div>
+  <div id="tabs-2">
+    <?php
+                               function recortar_texto($texto, $limite=100){   
+                                    $texto = trim($texto);
+                                    $texto = strip_tags($texto);
+                                    $tamano = strlen($texto);
+                                    $resultado = '';
+                                    if($tamano <= $limite){
+                                        return $texto;
+                                    }else{
+                                        $texto = substr($texto, 0, $limite);
+                                        $palabras = explode(' ', $texto);
+                                        $resultado = implode(' ', $palabras);
+                                        $resultado .= '...';
+                                    }   
+                                    return $resultado;
+                                }
+                               $i = 0;
+                               $id = '';
+                               $id2 = '';
+                               $print = false;
+                               $print_ob = false;
+                               if (!empty($favorita)){
+                               foreach ($favorita as $key => $value){
+                               
+                                   if($id !== $value['idPublicacion']){
+                                   $i++;
+                                       
                                    }
-				   ?>   
-				   </tbody>
-				</table>
+                              $id = $value['idPublicacion'];     
+                             if($id == $value['idPublicacion']){
+                                   $arraynuevo[$i][$key] = $value; 	
+                               	   }
+                               	}?>    
+                                
+                                    <?php
+                                    $a = 0;
+                                   foreach ($arraynuevo as $valor){
+                                   
+                                      if($a < $i) {
+                                          $ab = $a;
+                                   ?>    
+                               
+                    <div class="news">
+                                  
+                                    <div class="newContent">
+                                      <?php } 
+                                      foreach ($valor as $valor1){
+                                      if($id2 !== $valor1['idPublicacion']){$print = false;}
+                                      if ($valor1['field_name'] == "observacion") {  ?>  
+                                      <p><?php echo recortar_texto($valor1['field_value'], 50);?></p>
+                                      <?php  } ?> 
+                                      <?php if ($valor1['field_name'] == "imagen1") { 
+                                          
+                                      $imagen1 = array(
+                                     'src' => 'files/'.$valor1['field_value'],
+                                                'alt' => 'Imagen 1',
+                                                'class' => 'imagenes',
+
+                                                'title' => 'Imagen 1',
+
+                                      );     
+                                      ?>          
+                                               <?php echo img($imagen1);?>
+                                       <?php  } ?> 
+                                   
+                                                <?php if ($valor1['field_name'] == "address") {  ?>  
+	                                        <h4><?php echo $valor1['field_value']?></h4>
+                                                <?php  } ?> 
+	                             
+                                    
+                                     <?php if ($print == false) {
+                                     $id2 = $valor1['idPublicacion'];
+                                         ?>
+                                                
+	                                    <div class="read-more">
+	                                        <a href="<?php  echo base_url(); ?>index.php/Publicadas/show/<?php echo $valor1['idPublicacion'] ?>" ><span>leer Más</span></a>
+	                                    </div>
+                                    <?php $print = true;  } ?>
+                                
+                             
+                               <?php 
+                                   }
+                               if($a < $i) {
+                               	?>
+                                      </div></div>
+                                     <?php 
+                               }
+                                   $a++;    }
+                                      }?>
+  </div>
+  
+</div>
             </div>
         </div>
     </div>
