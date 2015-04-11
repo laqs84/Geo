@@ -152,9 +152,9 @@
                             <div class="nav-content-left">
                                 <ul>
                                     <li  class="send1 mainmenu-itemvertical active"><a href="<?php echo base_url(); ?>index.php"><?php echo img('images/flechamenu.png');?> <span>Inicio</span></a></li>
-                                    <li id='construcciones1' class=" send1 mainmenu-itemvertical"><a href="#"  id='construcciones'><?php echo img('images/flechamenu.png');?> <span>Construcciones</span></a></li>
-                                    <li id='terreno1' class="send1 mainmenu-itemvertical"><a href="#"  id='terreno'><?php echo img('images/flechamenu.png');?> <span>Terrenos</span></a></li>
-                                    <li id='alquileres1' class="send1 mainmenu-itemvertical"><a href="#"  id='alquileres'><?php echo img('images/flechamenu.png');?> <span>Alquileres</span></a></li>
+                                    <li id='construcciones' class=" send1 mainmenu-itemvertical"><a href="#"  id='construcciones'><?php echo img('images/flechamenu.png');?> <span>Construcciones</span></a></li>
+                                    <li id='terreno' class="send1 mainmenu-itemvertical"><a href="#"  id='terreno'><?php echo img('images/flechamenu.png');?> <span>Terrenos</span></a></li>
+                                    <li id='alquileres' class="send1 mainmenu-itemvertical"><a href="#"  id='alquileres'><?php echo img('images/flechamenu.png');?> <span>Alquileres</span></a></li>
                                 <!--      <li id='remate1' class="mainmenu-itemvertical"><a href="#" class="send1" id='remate'><?php // img('images/flechamenu.png');?> <span>Remates</span></a></li-->
                                     <li class="mainmenu-itemvertical"><a href="<?php echo base_url(); ?>index.php/Contacto"><?php echo img('images/flechamenu.png');?> <span>Contacto</span></a></li>
                                   <!--  <li class="mainmenu-itemvertical"><a href=""><?php echo img('images/flechamenu.png');?> <span>Favoritos</span></a><ul>

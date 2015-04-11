@@ -216,7 +216,8 @@ $(document).ready(function() {
      
      
      $(".send1").click(function()
-    { 
+    {
+        
        $('#msjerrror').hide();
        $('#msjerrror').empty();
        var categoria = $(this).attr("id") 
@@ -245,13 +246,26 @@ $(document).ready(function() {
             markers[i].setMap(map);
           }
         }
+        
         function clearOverlays() {
           setAllMap(null);
         }
      clearOverlays();
         markers = [];
     
-    
+        var bounds = new google.maps.LatLngBounds();
+         
+       
+      //Load Markers from the XML File, Check (map_process.php)
+
+        for(var i = 0; i < publications.length; i++){
+            if(publications[i].type == categoria){
+            create_marker(publications[i].point, publications[i].name, publications[i].address, false, false, false, url2+"/"+ publications[i].type +".png", publications[i].photo, publications[i].id, publications[i].observacion);
+            bounds.extend(publications[i].point);
+        }
+        }
+        
+        map.fitBounds(bounds);
     
    var data = dataarray;
        $.ajax({
