@@ -1,6 +1,7 @@
  $(document).ready(function() {
  $('#precio-dolar').hide();
   $('.info-venta').submit(function(e) {
+      debugger;
 		e.preventDefault();
                 var lat =  $('#lat').val();
                 if(lat == ""){
@@ -11,6 +12,7 @@
                 
                 var idPublicacion = $('#idPublicacion').val();
                 var foto1 = $('#imagen1').val();
+                var imagePreview1 = $('#imagePreview1').attr('src');
                 if (idPublicacion === undefined)
                         {
                             $('#btn-save-info').append("<img id='Cargando...' src='../../images/loader.gif'/>");
@@ -24,8 +26,8 @@
                  var $fileUpload = $("input[type='file']");
                  if (idPublicacion === undefined)
                         {
-                 if (foto1 == ''){
-                     alert("Tiene que subir por menos una archivo");
+                 if (foto1 == '' || imagePreview1 == ''){
+                     alert("Tiene que subir la primera foto");
                      return false;
                  }
                         }
