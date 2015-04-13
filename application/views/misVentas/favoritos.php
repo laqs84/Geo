@@ -1,5 +1,20 @@
+
 <?php include_once('/../headeradmin.php') ;?>
 <script src=<?php echo base_url().'script/ventas.js'?> ></script>
+<style>
+    .ui-widget-header {
+    background: none repeat scroll 0 0 #33302f;
+    border: 1px solid #aaaaaa;
+    color: #222222;
+    font-weight: bold;
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+    background: none repeat scroll 0 0 #439a00;
+    border: 1px solid #aaaaaa;
+    color: #212121;
+    font-weight: normal;
+}
+</style>
 <div id="siteframe">
     <div id="content">
         <div class="content-padding">
@@ -113,5 +128,11 @@
     </div>
 </div>
 
-
+<script src="//code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css">
+<script>
+  $(function() {
+    $( "#tabs" ).tabs();
+  });
+  </script>
 <?php include_once('/../footer.php') ;?>

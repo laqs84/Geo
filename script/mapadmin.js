@@ -1,4 +1,5 @@
-  
+  var publications = [];
+
 $(document).ready(function() {
  
   var url = '../admin/mapa';
@@ -28,7 +29,18 @@ var mapCenter = new google.maps.LatLng(9.633931465220899, -84.25418434999995); /
         mapTypeId: google.maps.MapTypeId.ROADMAP // google map type
       };
     
-        map = new google.maps.Map(document.getElementById("google_map"), googleMapOptions);     
+        map = new google.maps.Map(document.getElementById("google_map"), googleMapOptions);   
+        var bounds = new google.maps.LatLngBounds();
+         
+       
+      //Load Markers from the XML File, Check (map_process.php)
+      
+        for(var i = 0; i < publications.length; i++){
+            create_marker(publications[i].point, publications[i].name, publications[i].address, false, false, false, url2+"/"+ publications[i].type +".png", publications[i].photo, publications[i].id, publications[i].observacion);
+            bounds.extend(publications[i].point);
+        }
+        
+        map.fitBounds(bounds);
        
       //Load Markers from the XML File, Check (map_process.php)
       $.get(url, function (data) {

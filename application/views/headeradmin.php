@@ -86,19 +86,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     center: myLatlng,
                     mapTypeId: google.maps.MapTypeId.ROADMAP
                 }
-                var bounds = new google.maps.LatLngBounds();
-         var publications = [];
-       
-      //Load Markers from the XML File, Check (map_process.php)
 
-        for(var i = 0; i < publications.length; i++){
-            
-            create_marker(publications[i].point, publications[i].name, publications[i].address, false, false, false, url2+"/"+ publications[i].type +".png", publications[i].photo, publications[i].id, publications[i].observacion);
-            bounds.extend(publications[i].point);
-        
-        }
-        
-        map.fitBounds(bounds);
                 map = new google.maps.Map($("#google_map").get(0), myOptions);
 
                 infoWindow = new google.maps.InfoWindow();
