@@ -12,14 +12,14 @@
                     <ul>
                         <li><input type="hidden" name="tipo_categoria" id="tipo_categoria" value="terreno" ></li>
                         <li><label>Titulo</label></li>
-                        <li><input  type="text" name="name" style='border: 5px solid #439a00;border-radius: 8px;box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) inset, 0 1px 2px rgba(0, 0, 0, 0.7);display: block;font: 14px "Helvetica Neue" ,Helvetica,Arial,sans-serif;margin-bottom: 20px;padding: 6px 10px;position: relative;width: 320px;' id="name" value="" required class="form-input"></li>
+                        <li><input  type="text" name="name" maxlength="50" style='border: 5px solid #439a00;border-radius: 8px;box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) inset, 0 1px 2px rgba(0, 0, 0, 0.7);display: block;font: 14px "Helvetica Neue" ,Helvetica,Arial,sans-serif;margin-bottom: 20px;padding: 6px 10px;position: relative;width: 320px;' id="name" value="" required class="form-input"></li>
                         <li><label>Fotos</label></li>
                         <li>
                             <div class="images">
 					<figure>
                                             <img class="upload" id="1" alt="Cargar imagen" src="<?php echo base_url()?>images/picture-save.png" />
 						<img class="loading" alt="Cargando..." src="<?php echo base_url()?>images/loader.gif" />
-						<img alt="Vista previa" class="preview" />
+						<img alt="Vista previa" id="imagePreview1" class="preview" />
 					</figure><figure>
 						<img class="upload" id="2" alt="Cargar imagen" src="<?php echo base_url()?>images/picture-save.png" />
 						<img class="loading" alt="Cargando..." src="<?php echo base_url();?>images/loader.gif" />
