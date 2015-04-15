@@ -1,15 +1,56 @@
-  var publications = [];
-
-$(document).ready(function() {
- 
+ var infowindow = new google.maps.InfoWindow;
+ var publications = [];
+  var avgLat;
+  var avgLng;
   var url = '../admin/mapa';
   var url1 = '../admin/mapano';
   var   url2 = '../../icons'
   var   url3 = '../../iconfavor'
   var files = "../../files";
         var readmore = "../../index.php/Publicadas";
+ function get_publications(){
+      var latArray = [];
+      var lngArray = [];
+   
+      $.ajax({
+  url: url,
+  async: false,
+  success: function(data) {
+     $(data).find("marker").each(function () {
+            var name    = $(this).attr('name');
+            var address   = $(this).attr('address');
+            var type    = $(this).attr('type');
+            var photo    = $(this).attr('photo');
+            var id    = $(this).attr('id');
+            var observacion    = $(this).attr('observacion');
+            var lat = parseFloat($(this).attr('lat'));
+            latArray.push(lat);
+            var lng = parseFloat($(this).attr('lng'));
+            lngArray.push(lng);
+            var point   = new google.maps.LatLng(lat,lng);
+            publications.push({name: name, address: address,type:type,photo:photo,id:id,observacion:observacion,point:point});
+        });
+  }
+  });
+        latArray.sort(sortNumber);
+        lngArray.sort(sortNumber);
+        
+        avgLat = latArray[0]+((latArray[latArray.length-1]-latArray[0])/2);
+        avgLng = lngArray[0]+((lngArray[lngArray.length-1]-lngArray[0])/2);
+        
+        mapCenter = new google.maps.LatLng(avgLat, avgLng);
+  
+  }
+  
+  function sortNumber(a,b) {
+    return a - b;
+}
+$(document).ready(function() {
+ 
+  
 var mapCenter = new google.maps.LatLng(9.633931465220899, -84.25418434999995); //Google map Coordinates
   var map;
+  get_publications();
   map_initializeno();
   map_initialize(); // initialize google map
   
@@ -119,7 +160,7 @@ var mapCenter = new google.maps.LatLng(9.633931465220899, -84.25418434999995); /
 
     
     
-   var infowindow = new google.maps.InfoWindow;
+   
 
     var onMarkerClick = function() {
       var marker = this;

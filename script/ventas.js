@@ -1,7 +1,7 @@
  $(document).ready(function() {
  $('#precio-dolar').hide();
   $('.info-venta').submit(function(e) {
-      debugger;
+     
 		e.preventDefault();
                 var lat =  $('#lat').val();
                 if(lat == ""){
@@ -15,11 +15,11 @@
                 var imagePreview1 = $('#imagePreview1').attr('src');
                 if (idPublicacion === undefined)
                         {
-                            $('#btn-save-info').append("<img id='Cargando...' src='../../images/loader.gif'/>");
+                            $('#btn-save-info').append("<img class='cargando' src='../../images/loader.gif'/>");
                         var url = '../Publicar/guardarimagenes'; }
                         else
                         {
-                            $('#btn-save-info').append("<img id='Cargando...' src='../../../images/loader.gif'/>");
+                            $('#btn-save-info').append("<img class='cargando' src='../../../images/loader.gif'/>");
                          var url = '../../Publicar/guardarimagenes';}
                      
                 var count = $('#count').val();
@@ -28,6 +28,8 @@
                         {
                  if (foto1 == '' || imagePreview1 == ''){
                      alert("Tiene que subir la primera foto");
+              $('.cargando').hide();       
+              $('#submit').show();
                      return false;
                  }
                         }
