@@ -181,7 +181,7 @@ class Publicadas extends CI_Controller {
 		$c=0;
 		foreach ( $data as $dat)
 		{
-			if($dat['name'] == "tipo_categoria" || $dat['name'] == "tiempo")
+			if($dat['name'] == "tipo_categoria" || $dat['name'] == "tiempo" || $dat['name'] == "status")
 			{
 				$array_publicacion[$dat['name']] =  $dat['value'];
 			}

@@ -23,7 +23,6 @@ function estado(id,idpublicar){
 				
 				if (data.status === "success")
 				{
-					alert(data.msg);
                                         location.reload();
 				}
 				else

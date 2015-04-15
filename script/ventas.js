@@ -299,7 +299,7 @@ function SaveInfoEditada()
 	            success:function(data){
 	                if(data !== null){
 	                    alert("Se Actualizo correctamente!!");
-	                    location.reload();
+	                    location.replace('../../Publicadas/publicacion');
 	                }else{
 	                   alert("No se Actualizo correctamente!!");
 	                }

@@ -573,7 +573,7 @@ form.info-venta > ul  > li  >  .images > figure > img.preview{ z-index:-2; }
 	                     		<li>
 	                            	<input type="text" name="lng" id="lng" value="<?= $lng ?>" class="numbersOnly"/>
 	                        </li>
-                                </ul>
+                </ul>
                                       <script type='text/javascript'>
             var map = null;
             var infoWindow = null;
@@ -625,6 +625,20 @@ form.info-venta > ul  > li  >  .images > figure > img.preview{ z-index:-2; }
                             <div id="google_map"></div>
                         </div>
                     </div>
+            </br>
+
+            <ul>
+            <li><label>Estado</label></li>
+            <li>  <select  name="status" id="status">
+                       <optgroup>
+                           <option value="1" <?php if($value['status']== "1") echo 'selected'; ?>>Activo</option>
+                           <option value="0" <?php if($value['status']== "0") echo 'selected'; ?>>Desactivo</option>
+                       </optgroup>
+                 </select>
+            </li>
+            </ul>
+	 
+
                     <div id="btn-save-info">
                     <input type="submit" name="submit" value="Editar" id="submit" />
                     </div>
