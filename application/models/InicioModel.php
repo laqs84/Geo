@@ -145,7 +145,7 @@
                       $condiciones[] = "t1.field_value = 'precio-dolar' >= ".$precio1." AND 'precio-dolar' <= ". $campo['value'] ."";   
                       }
                         }      
-                   if($campo['name'] == "address" && $campo['value'] !== '')
+                   if($campo['name'] == "tamano-frente" && $campo['value'] !== '')
                         {
                         
                       $condiciones[] = "t1.field_value LIKE '%" . $campo['value'] . "%'";
