@@ -130,7 +130,7 @@ var infowindow = new google.maps.InfoWindow;
 $(document).ready(function() {
     $("#send").click(function()
     { 
-        
+         $('#msjerrror').hide();
       var markers = [];
     var googleMapOptions = 
       { 
@@ -156,17 +156,27 @@ $(document).ready(function() {
         }
      clearOverlays();
         markers = [];
-    var busquedaavance = $('busquedaavance').val();
-    if (busquedaavance == ''){var url = "../Inicio/busqueda";
+        var bounds = new google.maps.LatLngBounds();
+         
+       
+      //Load Markers from the XML File, Check (map_process.php)
+
+      
+        
+        
+    
+    
+   
+   var data = $('#formbuscar').serializeArray();
+   var busquedaavance = $('#busquedaavance').val();
+    if (busquedaavance == 1){
+        var url = "../Inicio/busqueda";
     
         }
     else {var url = "index.php/Inicio/busqueda";
     
         }
     ;
-    
-   
-   var data = $('#formbuscar').serializeArray();
        $.ajax({
         type: "post",
         url: url,
@@ -177,6 +187,10 @@ $(document).ready(function() {
 	            },
         success: function(data1){                        
         try{        
+             if(data1 == null){
+                $('#msjerrror').show();
+                $('#msjerrror').append('Con esa busqueda no hay ningun resultado, Intente con otra opcion');
+            }
             $(data1).find("marker").each(function () {
             var name    = $(this).attr('name');
             var address   = $(this).attr('address');
@@ -186,6 +200,8 @@ $(document).ready(function() {
             var observacion    = $(this).attr('observacion');
             var point   = new google.maps.LatLng(parseFloat($(this).attr('lat')),parseFloat($(this).attr('lng')));
             create_marker(point, name, address, false, false, false, url2+"/"+ type +".png", photo, id, observacion);
+            bounds.extend(point);
+            map.fitBounds(bounds);
         });
 
 
@@ -203,13 +219,13 @@ $(document).ready(function() {
   
   
     $("#mostrar").click(function(){
-            $('#cmenu').show(3000);
+            $('#cmenu').show(500);
             $('#cmenu').show("slow");
             $('.form-search.content-description').css("margin-bottom","25px", 'slow');
      });
      
          $("#ocultar").click(function(){
-            $('#cmenu').hide(3000);
+            $('#cmenu').hide(500);
             $('#cmenu').hide("fast");
             $('.form-search.content-description').css("margin-bottom","20px", 'slow');
      });

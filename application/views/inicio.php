@@ -141,7 +141,15 @@
 			
 			#ui-carousel-next > span, #ui-carousel-prev > span {
 				display: none;
-			}		
+			}	
+                        .precio > a#ocultar {
+  cursor: pointer;
+}
+.banos {
+  float: left;
+  margin-left: 20px;
+  width: 288px;
+}
 </style>
 	<!-- content -->
 <div id="siteframe">
@@ -287,8 +295,8 @@
                                      <h2>Busqueda</h2>
                                      <a id="mostrar">Avanzadas</a>
                                      <div class="ciudad">
-                                            <label for="ciudad" >Ciudad</label>
-                                            <input class="pequenos" type="text" name="address" id="address" />
+                                            <label for="tamaño" >Tamaño Frente</label>
+                                            <input class="pequenos" type="text" name="tamano-frente" id="tamano-frente" />
                                      </div> 
                                      <div class="tipos">
                                             <label for="tipo" >Tipo</label>
@@ -318,11 +326,11 @@
                                      </div>  
                                      <div id="cmenu">
                                      <div class="banos">
-                                     <label for="moneda" >Baños</label>
+                                     <label for="moneda" >Cantidad de Baños</label>
                                      <input class="pequeñas" type="text" name="cantidad-banos" id="cantidad-banos" />
                                      </div>
                                      <div class="cochera">
-                                     <label for="cochera" >Cochera</label>
+                                     <label for="cochera" >Cantidad de Cochera</label>
                                      <input class="pequeñas" type="text" name="cantidad-carros" id="cantidad-carros" />
                                      </div>
                                      <div class="precio">

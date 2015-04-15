@@ -36,16 +36,25 @@
     width: 69px;
 }
 .trescolum {
-    float: right;
-    margin-left: 185px;
-    margin-top: -55px;
+  float: right;
+  margin-right: -70px;
+  margin-top: -75px;
 }
 .cantidad-cuartos {
-    margin-left: 793px;
-    margin-top: -10px;
+  margin-left: 795px;
+  margin-top: -31px;
 }
 .cantidad-cuartos label {
     margin-bottom: 5px;
+}
+.banos {
+  float: left;
+  margin-left: 67px;
+  width: 309px;
+}
+.cochera {
+  float: none;
+  margin-right: 0;
 }
 </style>
 	<!-- content -->
@@ -89,11 +98,11 @@
                                      </div>  
                                      <div id="newbuscar">
                                      <div class="banos">
-                                     <label for="moneda" >Baños</label>
+                                     <label for="moneda" >Cantidad de Baños</label>
                                      <input class="pequeñas" type="text" name="cantidad-banos" id="cantidad-banos" />
                                      </div>
                                      <div class="cochera">
-                                     <label for="cochera" >Cochera</label>
+                                     <label for="cochera" >Cantidad de Cocheras</label>
                                      <input class="pequeñas" type="text" name="cantidad-carros" id="cantidad-carros" />
                                      </div>
                                          <div class="trescolum">
@@ -126,9 +135,10 @@
                                      </div>
                                      
                                      </div>
-                                    <input type="hidden" id="busquedaavance" value="lleno">
+                                    <input type="hidden" id="busquedaavance" value="1">
                                 </form>
                             </div>
+                    <div id="msjerrror"></div>
                         <div id="google_map"></div>
                         
                    
